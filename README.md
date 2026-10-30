@@ -8,9 +8,9 @@
 
 ## Problem Statement
 
-Organizations invest heavily in detection tools (EDR, SIEM, host-based monitoring) and generally assume these tools will catch real attacker behavior once deployed — an assumption that's rarely tested. This project asks a narrower, testable question:
+Organizations invest heavily in detection tools (EDR, SIEM, host-based monitoring) and generally assume these tools will catch real attacker behavior once deployed, an assumption that's rarely tested. This project asks a narrower, testable question:
 
-> *Does our specific detection setup catch this specific, real attacker technique — and if not, why not?*
+> *Does our specific detection setup catch this specific, real attacker technique, and if not, why not?*
 
 ## Objectives
 
@@ -23,20 +23,20 @@ Organizations invest heavily in detection tools (EDR, SIEM, host-based monitorin
 
 ## Background
 
-This project sits within an established practice known as purple teaming / detection engineering — validating detection controls against real, reproducible attacker techniques rather than trusting vendor claims. Two reference tools informed its design:
+This project sits within an established practice known as purple teaming / detection engineering, validating detection controls against real, reproducible attacker techniques rather than trusting vendor claims. Two reference tools informed its design:
 
-- **Atomic Red Team** (Red Canary) — an open-source library of single-technique attack simulations mapped to MITRE ATT&CK.
-- **MITRE CALDERA** — an automated adversary emulation platform for observing detection coverage in real time.
+- **Atomic Red Team** (Red Canary), an open-source library of single-technique attack simulations mapped to MITRE ATT&CK.
+- **MITRE CALDERA**, an automated adversary emulation platform for observing detection coverage in real time.
 
-Both are largely userland- and Windows-oriented. This project's contribution is a Linux kernel-level rootkit technique combined with a purpose-built eBPF detection/instrumentation layer, plus a network-layer C2 beaconing technique — covering two distinct stages of the attack lifecycle (defense evasion and command-and-control, per MITRE ATT&CK).
+Both are largely userland- and Windows-oriented. This project's contribution is a Linux kernel-level rootkit technique combined with a purpose-built eBPF detection/instrumentation layer, plus a network-layer C2 beaconing technique, covering two distinct stages of the attack lifecycle (defense evasion and command-and-control, per MITRE ATT&CK).
 
 ## Scope
 
 | Module | Contents |
 |---|---|
-| **Module 1 — Kernel Rootkit** (primary focus) | LKM with syscall hooking, process hiding (`getdents64`), module self-hiding (`lsmod`), eBPF ground-truth probes, baseline detection check |
-| **Module 2 — C2 Beaconing** | Periodic check-in agent with randomized intervals, network-level periodicity detection |
-| **Module 3 — Gap Analysis & Reporting** | Ground-truth vs. detection comparison, auto-generated per-technique report |
+| **Module 1: Kernel Rootkit** (primary focus) | LKM with syscall hooking, process hiding (`getdents64`), module self-hiding (`lsmod`), eBPF ground-truth probes, baseline detection check |
+| **Module 2: C2 Beaconing** | Periodic check-in agent with randomized intervals, network-level periodicity detection |
+| **Module 3: Gap Analysis & Reporting** | Ground-truth vs. detection comparison, auto-generated per-technique report |
 
 **Explicitly out of scope:** no interaction with real/third-party/production systems, no live malware samples, no persistence beyond the lab VM, no external exfiltration. Everything runs in an isolated VM.
 
@@ -56,71 +56,20 @@ Both are largely userland- and Windows-oriented. This project's contribution is 
 ## Progress
 
 ### ✅ Done
-- Lab environment set up (Ubuntu, kernel `7.0.0-31-generic`, `build-essential`, matching kernel headers) — verified via successful module compilation.
-- Basic "hello world" LKM (`module1-rootkit/hello_mod/`) — confirms the build/load/unload toolchain works end-to-end.
-- Syscall hook on `getdents64` via kprobes (`module1-rootkit/syscall_hook/`) — logs the calling PID on every call. Used kprobes instead of direct `sys_call_table` patching since modern kernels don't export a writable table.
+
+- Lab environment set up (Ubuntu, kernel `7.0.0-31-generic`, `build-essential`, matching kernel headers), verified via successful module compilation.
+- Basic "hello world" LKM (`module1-rootkit/hello_mod/`), confirms the build/load/unload toolchain works end-to-end.
+- Syscall hook on `getdents64` via kprobes (`module1-rootkit/syscall_hook/`), logs the calling PID on every call. Used kprobes instead of direct `sys_call_table` patching since modern kernels don't export a writable table.
 - Project folder structure mirroring the module breakdown above, with a dated progress log at `docs/progress-log.md`.
 
 ### 🔄 In progress
-- **Process hiding** (`module1-rootkit/process_hiding/`): a post-handler on the `getdents64` kprobe intended to strip a target PID's directory entry so it disappears from `ps`/`top`. Builds and loads with no errors, but the target process is **not yet actually hidden** — currently debugging whether the kprobe is intercepting correctly on this kernel version, and whether `ps` even goes through `getdents64` the way assumed.
-- **Module self-hiding from `lsmod`** (`module1-rootkit/module_hiding/`): skeleton only — logic to unlink the module from the kernel's module list is stubbed with TODOs pending a locking check (`module_mutex`) before wiring it in.
+
+- **Process hiding** (`module1-rootkit/process_hiding/`): a post-handler on the `getdents64` kprobe intended to strip a target PID's directory entry so it disappears from `ps`/`top`. Builds and loads with no errors, but the target process is **not yet actually hidden**. Currently debugging whether the kprobe is intercepting correctly on this kernel version, and whether `ps` even goes through `getdents64` the way assumed.
+- **Module self-hiding from `lsmod`** (`module1-rootkit/module_hiding/`): skeleton only, logic to unlink the module from the kernel's module list is stubbed with TODOs pending a locking check (`module_mutex`) before wiring it in.
 
 ### ⏭️ Not started
+
 - C2 beaconing agent and network-level detection (Module 2)
-- eBPF ground-truth instrumentation layer (Module 3 in timeline, Weeks 6–7) — deliberately deferred until rootkit behaviors are functional, so there's something real to instrument
+- eBPF ground-truth instrumentation layer (Module 3 in timeline, Weeks 6–7), deliberately deferred until rootkit behaviors are functional, so there's something real to instrument
 - Baseline detection layer (auditd rules / integrity checks)
 - Gap-analysis and auto-report generation engine
-
-## Repo Structure
-
-```
-sem7-project/
-├── module1-rootkit/
-│   ├── hello_mod/            # basic LKM — done
-│   ├── syscall_hook/         # getdents64 kprobe logger — done
-│   ├── process_hiding/       # getdents64 entry-stripping — in progress
-│   ├── module_hiding/        # lsmod self-hide — skeleton
-│   └── baseline_detection/   # auditd rules, integrity checks — not started
-├── module2-c2-beacon/
-│   ├── agent/                 # not started
-│   └── detection/             # not started
-├── module3-reporting/
-│   ├── gap_analysis/          # not started
-│   └── report_templates/      # not started
-├── ebpf/
-│   ├── probes/                 # not started
-│   └── ground_truth_logs/      # not started
-└── docs/
-    └── progress-log.md         # dated work log
-```
-
-## Building and Testing a Module
-
-Each module folder is a standalone kernel module:
-
-```bash
-cd module1-rootkit/<module_name>
-make
-sudo insmod <module_name>.ko
-dmesg | tail        # check kernel log output
-sudo rmmod <module_name>
-```
-
-Requires `build-essential` and `linux-headers-$(uname -r)` installed and matching the running kernel.
-
-## Roadmap
-
-| Phase | Activity |
-|---|---|
-| 1 | Literature review, lab setup, study Atomic Red Team / CALDERA architecture |
-| 2 | Rootkit development (syscall hooking, process/module hiding) — **current phase** |
-| 3 | eBPF instrumentation layer |
-| 4 | Baseline detection setup, initial rootkit detection testing |
-| 5 | C2 beaconing simulator + network detection |
-| 6 | Gap-analysis and auto-report engine |
-| 7 | End-to-end integration |
-| 8 | Documentation, evaluation, refinement |
-
----
-
-*This README reflects actual working status as of the current commit, not the full planned scope — see the objectives/scope sections above for the target end state.*
