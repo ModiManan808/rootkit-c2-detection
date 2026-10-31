@@ -1,0 +1,216 @@
+eBPF ground-truth monitor running. Ctrl+C to stop.
+[GROUND TRUTH] fork: pid=15247 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15248 ppid=12712 comm=bash
+[GROUND TRUTH] exit: pid=15247
+[GROUND TRUTH] exit: pid=15237
+[GROUND TRUTH] exit: pid=15236
+[GROUND TRUTH] exit: pid=15238
+[GROUND TRUTH] exit: pid=15241
+[GROUND TRUTH] exit: pid=14698
+[GROUND TRUTH] fork: pid=15249 ppid=15248 comm=sudo
+[GROUND TRUTH] exit: pid=15249
+[GROUND TRUTH] fork: pid=15250 ppid=15248 comm=sudo
+[GROUND TRUTH] exit: pid=15250
+[GROUND TRUTH] fork: pid=15251 ppid=15248 comm=sudo
+[GROUND TRUTH] fork: pid=15252 ppid=15251 comm=sudo
+[GROUND TRUTH] exit: pid=15252
+[GROUND TRUTH] exit: pid=15251
+[GROUND TRUTH] exit: pid=15248
+[GROUND TRUTH] fork: pid=15253 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15254 ppid=15253 comm=sudo
+[GROUND TRUTH] exit: pid=15254
+[GROUND TRUTH] fork: pid=15255 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15256 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15257 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15258 ppid=15253 comm=sudo
+[GROUND TRUTH] fork: pid=15259 ppid=15258 comm=sudo
+[GROUND TRUTH] exit: pid=15259
+[GROUND TRUTH] exit: pid=15258
+[GROUND TRUTH] fork: pid=15260 ppid=2952 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15253
+[GROUND TRUTH] fork: pid=15261 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15262 ppid=545 comm=systemd-udevd
+[GROUND TRUTH] fork: pid=15263 ppid=15261 comm=sudo
+[GROUND TRUTH] exit: pid=15263
+[GROUND TRUTH] fork: pid=15264 ppid=15261 comm=sudo
+[GROUND TRUTH] fork: pid=15265 ppid=15264 comm=sudo
+[GROUND TRUTH] module load: pid=15265 comm=insmod ts=9031619697794
+[GROUND TRUTH] exit: pid=15265
+[GROUND TRUTH] exit: pid=15264
+[GROUND TRUTH] exit: pid=15261
+[GROUND TRUTH] fork: pid=15266 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15267 ppid=12712 comm=bash
+[GROUND TRUTH] exit: pid=15267
+[GROUND TRUTH] exit: pid=15266
+[GROUND TRUTH] fork: pid=15268 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15269 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15270 ppid=15269 comm=sudo
+[GROUND TRUTH] exit: pid=15270
+[GROUND TRUTH] fork: pid=15271 ppid=15269 comm=sudo
+[GROUND TRUTH] fork: pid=15272 ppid=15271 comm=sudo
+[GROUND TRUTH] exit: pid=15272
+[GROUND TRUTH] exit: pid=15271
+[GROUND TRUTH] exit: pid=15269
+[GROUND TRUTH] fork: pid=15273 ppid=12712 comm=bash
+[GROUND TRUTH] fork: pid=15274 ppid=12712 comm=bash
+[GROUND TRUTH] exit: pid=15273
+[GROUND TRUTH] exit: pid=15274
+[GROUND TRUTH] fork: pid=15275 ppid=12712 comm=bash
+[GROUND TRUTH] exit: pid=15275
+[GROUND TRUTH] exit: pid=15262
+[GROUND TRUTH] exit: pid=15221
+[GROUND TRUTH] exit: pid=15256
+[GROUND TRUTH] exit: pid=15257
+[GROUND TRUTH] exit: pid=15260
+[GROUND TRUTH] exit: pid=15255
+[GROUND TRUTH] exit: pid=15220
+[GROUND TRUTH] fork: pid=15276 ppid=12617 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15277 ppid=2 comm=kthreadd
+[GROUND TRUTH] exit: pid=12712
+[GROUND TRUTH] exit: pid=15268
+[GROUND TRUTH] exit: pid=12652
+[GROUND TRUTH] exit: pid=15136
+[GROUND TRUTH] fork: pid=15278 ppid=492 comm=systemd-journal
+[GROUND TRUTH] fork: pid=15279 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=15278
+[GROUND TRUTH] exit: pid=15279
+[GROUND TRUTH] exit: pid=15276
+[GROUND TRUTH] fork: pid=15280 ppid=1109 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15171
+[GROUND TRUTH] fork: pid=15281 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15281
+[GROUND TRUTH] fork: pid=15282 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15283 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15284 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15283
+[GROUND TRUTH] fork: pid=15285 ppid=2952 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15286 ppid=2966 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15287 ppid=12617 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15288 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15289 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15288
+[GROUND TRUTH] exit: pid=15280
+[GROUND TRUTH] fork: pid=15290 ppid=15289 comm=sudo
+[GROUND TRUTH] exit: pid=15290
+[GROUND TRUTH] fork: pid=15291 ppid=15289 comm=sudo
+[GROUND TRUTH] exit: pid=15291
+[GROUND TRUTH] fork: pid=15292 ppid=15289 comm=sudo
+[GROUND TRUTH] fork: pid=15293 ppid=15292 comm=sudo
+[GROUND TRUTH] exit: pid=15293
+[GROUND TRUTH] exit: pid=15292
+[GROUND TRUTH] exit: pid=15289
+[GROUND TRUTH] fork: pid=15294 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15295 ppid=15294 comm=sudo
+[GROUND TRUTH] exit: pid=15295
+[GROUND TRUTH] fork: pid=15296 ppid=15294 comm=sudo
+[GROUND TRUTH] fork: pid=15297 ppid=15296 comm=sudo
+[GROUND TRUTH] exit: pid=15297
+[GROUND TRUTH] exit: pid=15296
+[GROUND TRUTH] exit: pid=15294
+[GROUND TRUTH] fork: pid=15298 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15299 ppid=15298 comm=sudo
+[GROUND TRUTH] exit: pid=15299
+[GROUND TRUTH] fork: pid=15300 ppid=15298 comm=sudo
+[GROUND TRUTH] fork: pid=15301 ppid=545 comm=systemd-udevd
+[GROUND TRUTH] fork: pid=15302 ppid=15300 comm=sudo
+[GROUND TRUTH] module load: pid=15302 comm=insmod ts=9090341733571
+[GROUND TRUTH] exit: pid=15302
+[GROUND TRUTH] exit: pid=15300
+[GROUND TRUTH] exit: pid=15298
+[GROUND TRUTH] fork: pid=15303 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15304 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15303
+[GROUND TRUTH] exit: pid=15304
+[GROUND TRUTH] fork: pid=15305 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15306 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15307 ppid=15306 comm=sudo
+[GROUND TRUTH] exit: pid=15307
+[GROUND TRUTH] fork: pid=15308 ppid=15306 comm=sudo
+[GROUND TRUTH] fork: pid=15309 ppid=15308 comm=sudo
+[GROUND TRUTH] exit: pid=15309
+[GROUND TRUTH] exit: pid=15308
+[GROUND TRUTH] exit: pid=15306
+[GROUND TRUTH] fork: pid=15310 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15311 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15310
+[GROUND TRUTH] exit: pid=15311
+[GROUND TRUTH] fork: pid=15312 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15312
+[GROUND TRUTH] exit: pid=15301
+[GROUND TRUTH] fork: pid=15313 ppid=2 comm=kthreadd
+[GROUND TRUTH] exit: pid=15282
+[GROUND TRUTH] exit: pid=15285
+[GROUND TRUTH] fork: pid=15314 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15315 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15315
+[GROUND TRUTH] fork: pid=15316 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15317 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15318 ppid=2952 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15314
+[GROUND TRUTH] fork: pid=15319 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15319
+[GROUND TRUTH] exit: pid=15287
+[GROUND TRUTH] exit: pid=15113
+[GROUND TRUTH] exit: pid=15317
+[GROUND TRUTH] exit: pid=15284
+[GROUND TRUTH] exit: pid=15318
+[GROUND TRUTH] exit: pid=15316
+[GROUND TRUTH] fork: pid=15320 ppid=12617 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15321 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15323 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15322 ppid=15321 comm=sudo
+[GROUND TRUTH] fork: pid=15324 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15322
+[GROUND TRUTH] fork: pid=15325 ppid=15321 comm=sudo
+[GROUND TRUTH] fork: pid=15326 ppid=15325 comm=sudo
+[GROUND TRUTH] exit: pid=15326
+[GROUND TRUTH] exit: pid=15325
+[GROUND TRUTH] exit: pid=15321
+[GROUND TRUTH] fork: pid=15327 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15328 ppid=2952 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15327
+[GROUND TRUTH] fork: pid=15329 ppid=545 comm=systemd-udevd
+[GROUND TRUTH] exit: pid=15329
+[GROUND TRUTH] exit: pid=15286
+[GROUND TRUTH] exit: pid=15320
+[GROUND TRUTH] exit: pid=15324
+[GROUND TRUTH] exit: pid=15328
+[GROUND TRUTH] exit: pid=15323
+[GROUND TRUTH] fork: pid=15330 ppid=2966 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15331 ppid=12617 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15332 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15333 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15334 ppid=15332 comm=sudo
+[GROUND TRUTH] exit: pid=15334
+[GROUND TRUTH] fork: pid=15335 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15336 ppid=3520 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15337 ppid=15332 comm=sudo
+[GROUND TRUTH] fork: pid=15338 ppid=15337 comm=sudo
+[GROUND TRUTH] fork: pid=15339 ppid=2952 comm=pool-spawner
+[GROUND TRUTH] module load: pid=15338 comm=insmod ts=9149262446144
+[GROUND TRUTH] exit: pid=15338
+[GROUND TRUTH] exit: pid=15337
+[GROUND TRUTH] exit: pid=15332
+[GROUND TRUTH] fork: pid=15340 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15341 ppid=13309 comm=bash
+[GROUND TRUTH] fork: pid=15342 ppid=545 comm=systemd-udevd
+[GROUND TRUTH] exit: pid=15340
+[GROUND TRUTH] exit: pid=15341
+[GROUND TRUTH] fork: pid=15343 ppid=13309 comm=bash
+[GROUND TRUTH] exit: pid=15343
+[GROUND TRUTH] exit: pid=15342
+[GROUND TRUTH] exit: pid=15330
+[GROUND TRUTH] exit: pid=15331
+[GROUND TRUTH] exit: pid=15335
+[GROUND TRUTH] exit: pid=15333
+[GROUND TRUTH] exit: pid=15339
+[GROUND TRUTH] exit: pid=15336
+[GROUND TRUTH] exit: pid=12033
+[GROUND TRUTH] fork: pid=15344 ppid=2966 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15345 ppid=2966 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15346 ppid=2966 comm=pool-spawner
+[GROUND TRUTH] fork: pid=15347 ppid=2966 comm=pool-spawner
+[GROUND TRUTH] exit: pid=15344
+[GROUND TRUTH] exit: pid=15345
+[GROUND TRUTH] exit: pid=15346
+[GROUND TRUTH] exit: pid=15347

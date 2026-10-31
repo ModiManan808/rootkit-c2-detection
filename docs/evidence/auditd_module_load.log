@@ -1,0 +1,55 @@
+----
+time->Sat Oct 31 04:00:42 2026
+type=PROCTITLE msg=audit(1793399442.891:428): proctitle=617564697463746C002D6100616C776179732C65786974002D46006172636800623634002D5300696E69745F6D6F64756C652C66696E69745F6D6F64756C65002D6B006D6F64756C655F6C6F6164
+type=SYSCALL msg=audit(1793399442.891:428): arch=c000003e syscall=44 success=yes exit=1068 a0=4 a1=7ffe1c2c0fb0 a2=42c a3=0 items=0 ppid=14540 pid=14542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts8 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1793399442.891:428): auid=1000 ses=3 subj=unconfined op=add_rule key="module_load" list=4 res=1
+----
+time->Sat Oct 31 04:01:02 2026
+type=PROCTITLE msg=audit(1793399462.389:448): proctitle=696E736D6F6400686964655F6D6F64756C652E6B6F
+type=KERN_MODULE msg=audit(1793399462.389:448): name="hide_module"
+type=SYSCALL msg=audit(1793399462.389:448): arch=c000003e syscall=313 success=no exit=-22 a0=3 a1=5ae537d5898b a2=0 a3=0 items=0 ppid=14579 pid=14580 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts8 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:02:48 2026
+type=PROCTITLE msg=audit(1793399568.411:466): proctitle=696E736D6F6400686964655F6D6F64756C652E6B6F
+type=KERN_MODULE msg=audit(1793399568.411:466): name="hide_module"
+type=SYSCALL msg=audit(1793399568.411:466): arch=c000003e syscall=313 success=no exit=-22 a0=3 a1=561fa783298b a2=0 a3=0 items=0 ppid=14632 pid=14633 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts8 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:03:47 2026
+type=PROCTITLE msg=audit(1793399627.750:484): proctitle=696E736D6F6400686964655F6D6F64756C652E6B6F
+type=KERN_MODULE msg=audit(1793399627.750:484): name="hide_module"
+type=SYSCALL msg=audit(1793399627.750:484): arch=c000003e syscall=313 success=yes exit=0 a0=3 a1=5695497c198b a2=0 a3=0 items=0 ppid=14669 pid=14670 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts8 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:21:00 2026
+type=PROCTITLE msg=audit(1793400660.668:547): proctitle=696E736D6F6400686964655F6D6F64756C652E6B6F
+type=KERN_MODULE msg=audit(1793400660.668:547): name="hide_module"
+type=SYSCALL msg=audit(1793400660.668:547): arch=c000003e syscall=313 success=yes exit=0 a0=3 a1=589f9806598b a2=0 a3=0 items=0 ppid=15131 pid=15132 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts9 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:21:01 2026
+type=PROCTITLE msg=audit(1793400661.313:552): proctitle=696E736D6F6400686964655F70726F636573732E6B6F007461726765745F7069643D3135313336
+type=KERN_MODULE msg=audit(1793400661.313:552): name="hide_process"
+type=SYSCALL msg=audit(1793400661.313:552): arch=c000003e syscall=313 success=no exit=-17 a0=3 a1=570867a3c010 a2=0 a3=0 items=0 ppid=15139 pid=15140 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts9 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:24:16 2026
+type=PROCTITLE msg=audit(1793400856.023:587): proctitle=696E736D6F6400686964655F6D6F64756C652E6B6F
+type=KERN_MODULE msg=audit(1793400856.023:587): name="hide_module"
+type=SYSCALL msg=audit(1793400856.023:587): arch=c000003e syscall=313 success=yes exit=0 a0=3 a1=62f5dbefd98b a2=0 a3=0 items=0 ppid=15264 pid=15265 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts9 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:24:16 2026
+type=PROCTITLE msg=audit(1793400856.645:592): proctitle=696E736D6F6400686964655F70726F636573732E6B6F007461726765745F7069643D3135323638
+type=KERN_MODULE msg=audit(1793400856.645:592): name="hide_process"
+type=SYSCALL msg=audit(1793400856.645:592): arch=c000003e syscall=313 success=no exit=-17 a0=3 a1=564be1319010 a2=0 a3=0 items=0 ppid=15271 pid=15272 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts9 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:25:14 2026
+type=PROCTITLE msg=audit(1793400914.740:607): proctitle=696E736D6F6400686964655F6D6F64756C652E6B6F
+type=KERN_MODULE msg=audit(1793400914.740:607): name="hide_module"
+type=SYSCALL msg=audit(1793400914.740:607): arch=c000003e syscall=313 success=yes exit=0 a0=3 a1=56eb859df98b a2=0 a3=0 items=0 ppid=15300 pid=15302 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts3 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:25:15 2026
+type=PROCTITLE msg=audit(1793400915.298:612): proctitle=696E736D6F6400686964655F70726F636573732E6B6F007461726765745F7069643D3135333035
+type=KERN_MODULE msg=audit(1793400915.298:612): name="hide_process"
+type=SYSCALL msg=audit(1793400915.298:612): arch=c000003e syscall=313 success=no exit=-17 a0=3 a1=6304cd837010 a2=0 a3=0 items=0 ppid=15308 pid=15309 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts3 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
+----
+time->Sat Oct 31 04:26:13 2026
+type=PROCTITLE msg=audit(1793400973.645:622): proctitle=696E736D6F6400686964655F70726F636573732E6B6F007461726765745F7069643D3135333035
+type=KERN_MODULE msg=audit(1793400973.645:622): name="hide_process"
+type=SYSCALL msg=audit(1793400973.645:622): arch=c000003e syscall=313 success=yes exit=0 a0=3 a1=653867f90010 a2=0 a3=0 items=0 ppid=15337 pid=15338 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts3 ses=3 comm="insmod" exe="/usr/bin/kmod" subj=unconfined key="module_load"
