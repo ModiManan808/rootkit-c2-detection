@@ -53,6 +53,7 @@ Each step pauses for Enter so you can narrate it live.
 
 from __future__ import annotations
 
+import re
 import subprocess
 import sys
 import time
@@ -127,6 +128,19 @@ def pid_in_proc_listing(pid: int) -> bool:
     return str(pid) in out.split()
 
 
+def run_capture_pid(cmd: list, **kw) -> tuple[int, int]:
+    """Like run(), but returns the spawned process's own PID - needed
+    because that PID is EXACTLY what the eBPF kprobe and auditd both
+    record for this specific insmod call, which is what makes real
+    event-level correlation possible (not just "a scanner said Warning
+    about something")."""
+    print(f"$ {' '.join(str(c) for c in cmd)}")
+    proc = subprocess.Popen(cmd)
+    pid = proc.pid
+    proc.wait()
+    return pid, proc.returncode
+
+
 def module_visible_in_lsmod(name: str) -> bool:
     out = subprocess.run(["lsmod"], capture_output=True, text=True).stdout
     return any(line.split() and line.split()[0] == name for line in out.splitlines()[1:])
@@ -164,7 +178,47 @@ def build_if_needed(ko_path: Path, build_dir: Path) -> None:
         sys.exit(1)
 
 
+def preflight_check_ground_truth() -> None:
+    """
+    Fail fast, before touching any kernel module, if the eBPF ground
+    truth monitor isn't actually writing live data. Catching this here
+    takes 6 seconds. Catching it at Step 5 means you've already loaded
+    both modules and have to redo the whole run.
+    """
+    step_header(0, "Pre-flight check - is the eBPF ground truth monitor actually live?")
+    if not GROUND_TRUTH_LOG.exists():
+        bad(f"{GROUND_TRUTH_LOG} does not exist yet.")
+        print("\nStart the monitor in its own terminal FIRST, then re-run this script:")
+        print(f"  cd {REPO_ROOT}")
+        print("  sudo python3 -u ebpf/ground_truth_logs/ground_truth_monitor.py "
+              "| tee ebpf/ground_truth_logs/ground_truth_run.log")
+        sys.exit(1)
+
+    before = GROUND_TRUTH_LOG.stat().st_size
+    note("Waiting 6s to confirm the log is actively growing (not just old data)...")
+    time.sleep(6)
+    after = GROUND_TRUTH_LOG.stat().st_size
+
+    if after > before:
+        ok(f"Log grew by {after - before} bytes in 6s - monitor is live and flushing. Proceeding.")
+        return
+
+    bad(f"Log did NOT grow in 6s ({before} -> {after} bytes). The monitor is either not "
+        f"running, or is running WITHOUT the -u flag and is buffering its output instead "
+        f"of flushing it (this is the #1 cause of this failure).")
+    print("\nFix - in the monitor's terminal, Ctrl+C it, then restart with -u EXACTLY like this:")
+    print(f"  cd {REPO_ROOT}")
+    print("  sudo pkill -f ground_truth_monitor.py")
+    print("  sudo python3 -u ebpf/ground_truth_logs/ground_truth_monitor.py "
+          "| tee ebpf/ground_truth_logs/ground_truth_run.log")
+    print("\nThen re-run this script. Refusing to proceed - loading the rootkit now "
+          "would waste the whole run if ground truth isn't actually capturing it.")
+    sys.exit(1)
+
+
 def main() -> None:
+    preflight_check_ground_truth()
+
     # ---- Step 1: baseline, before anything is hidden ----------------------
     step_header(1, "Baseline - start target process, confirm it's visible")
     target = subprocess.Popen(TARGET_PROC_CMD)
@@ -180,11 +234,15 @@ def main() -> None:
     step_header(2, "Build and load hide_process.ko (process hiding)")
     build_if_needed(HIDE_PROCESS_KO, PROCESS_HIDING_DIR)
     clean_stale_module("hide_process")
-    result = run(["insmod", str(HIDE_PROCESS_KO), f"target_pid={target.pid}"])
-    if result.returncode != 0:
+    hide_process_insmod_pid, rc = run_capture_pid(
+        ["insmod", str(HIDE_PROCESS_KO), f"target_pid={target.pid}"]
+    )
+    if rc != 0:
         print("!! insmod failed - module is still resident somehow. "
               "Run `sudo rmmod hide_process` manually and re-run this script.")
         sys.exit(1)
+    note(f"insmod PID for this exact load: {BOLD}{hide_process_insmod_pid}{RESET} "
+         f"(this is the PID we'll check for in ground truth + auditd in Step 6)")
     if module_visible_in_lsmod("hide_process"):
         ok("hide_process is visible in lsmod (expected - it doesn't hide itself).")
     else:
@@ -227,12 +285,13 @@ def main() -> None:
     step_header(4, "Build and load hide_module.ko (module self-hiding)")
     build_if_needed(HIDE_MODULE_KO, MODULE_HIDING_DIR)
     clean_stale_module("hide_module")
-    result = run(["insmod", str(HIDE_MODULE_KO)])
-    if result.returncode != 0:
+    hide_module_insmod_pid, rc = run_capture_pid(["insmod", str(HIDE_MODULE_KO)])
+    if rc != 0:
         print("!! insmod failed - module is still resident somehow. "
               "Run `echo 0 | sudo tee /proc/hide_ctl && sudo rmmod hide_module` "
               "manually and re-run this script.")
         sys.exit(1)
+    note(f"insmod PID for this exact load: {BOLD}{hide_module_insmod_pid}{RESET}")
     hidden_from_lsmod = not module_visible_in_lsmod("hide_module")
     ctl_exists = HIDE_CTL.exists()
 
@@ -286,50 +345,104 @@ def main() -> None:
 
     # ---- Step 6: baseline detection adapters -------------------------------
     step_header(6, "Baseline detection - what would a typical setup catch?")
-    note("rkhunter runs a FULL scan here (no checks disabled) - this can take "
-         "10-30 minutes. This script is meant to be run once, ahead of time, "
-         "with the full session captured to a transcript (see demo/README or "
-         "the `script` command) and then shown as a recording during the "
-         "actual presentation, rather than executed live.")
+    note("rkhunter: full scan, live output below (10-30 min).")
 
     results = []
-    results += auditd_adapter.run(log_path=AUDITD_LOG if AUDITD_LOG.exists() else None)
+    # Always live, never the old saved AUDITD_LOG file - that file is
+    # evidence from a PAST run, not this one. Using it here would silently
+    # show a stale timestamp (e.g. days old) as if it were this run's result.
+    results += auditd_adapter.run(log_path=None)
     results += chkrootkit_adapter.run()
     results += rkhunter_adapter.run()
 
+    # ---- Event-level correlation: does each tool's raw output actually
+    # reference the SPECIFIC PIDs from THIS run's events, not just "did it
+    # print a Warning about something"? This is computed, not interpreted -
+    # no judgment call needed live.
+    print(f"\n{BOLD}{'=' * 72}")
+    print("DETECTION VERIFICATION (per-event, computed from this run's exact PIDs)")
+    print(f"{'=' * 72}{RESET}")
+
+    gt_text = GROUND_TRUTH_LOG.read_text(errors="ignore") if GROUND_TRUTH_LOG.exists() else ""
+    gt_module_pids = {int(m) for m in re.findall(r"module load: pid=(\d+)", gt_text)}
+
+    auditd_raw = next((r.raw_output for r in results if r.source == "auditd"), "") or ""
+    chkrootkit_raw = "\n".join(r.raw_output or "" for r in results if r.source == "chkrootkit")
+    rkhunter_raw = "\n".join(r.raw_output or "" for r in results if r.source == "rkhunter")
+
+    def auditd_has_pid(pid: int) -> bool:
+        return any(f"pid={pid}" in line and "syscall=313" in line
+                   for line in auditd_raw.splitlines())
+
+    def text_mentions_pid(text: str, pid: int) -> bool:
+        # Word boundary so e.g. pid=683 doesn't false-match inside "6838"
+        return re.search(rf"\b{pid}\b", text) is not None
+
+    events = [
+        ("hide_process.ko load", hide_process_insmod_pid),
+        ("hide_module.ko load", hide_module_insmod_pid),
+    ]
+
+    print(f"\n{BOLD}Module load events (exact insmod PID this run):{RESET}")
+    for label, pid in events:
+        gt_confirmed = pid in gt_module_pids
+        gt_mark = f"{GREEN}CONFIRMED{RESET}" if gt_confirmed else f"{RED}NOT in ground truth{RESET}"
+        print(f"  {label} (pid={pid}): ground truth = {gt_mark}")
+        a_hit = auditd_has_pid(pid)
+        print(f"    auditd:     {GREEN + 'DETECTED (pid+syscall=313 matched)' + RESET if a_hit else RED + 'MISSED (no matching record)' + RESET}")
+        for tool_name, raw in (("chkrootkit", chkrootkit_raw), ("rkhunter", rkhunter_raw)):
+            hit = text_mentions_pid(raw, pid)
+            print(f"    {tool_name}:  {GREEN + 'mentions this PID' + RESET if hit else YELLOW + 'does not mention this PID (expected - whole-system scan, not PID-aware)' + RESET}")
+
+    print(f"\n{BOLD}Process hiding event (target PID, the actual hidden process):{RESET}")
+    print(f"  sleep 999 (pid={target.pid}): confirmed alive via direct /proc access in Step 3")
+    for tool_name, raw in (("auditd", auditd_raw), ("chkrootkit", chkrootkit_raw), ("rkhunter", rkhunter_raw)):
+        hit = text_mentions_pid(raw, target.pid)
+        print(f"    {tool_name}:  {GREEN + 'mentions this PID' + RESET if hit else RED + 'MISSED - never references this specific PID' + RESET}")
+    print(f"\n  {BOLD}This is the actual gap this project demonstrates:{RESET} none of these "
+          f"three tools check whether a SPECIFIC known PID is being filtered out of "
+          f"directory listings - that's the getdents64 hook your detection layer has "
+          f"no visibility into.")
+
     status_color = {
         DetectionStatus.DETECTED: GREEN,
-        DetectionStatus.PARTIAL: YELLOW,
         DetectionStatus.MISSED: RED,
         DetectionStatus.NOT_APPLICABLE: CYAN,
     }
 
-    print(f"\n{'Source':<12} {'Status':<10} Flagged text / notes")
+    print(f"\n{'Source':<12} {'Status':<10} Flagged text / notes (raw tool output, unfiltered)")
     print("-" * 90)
     for r in results:
         detail = (r.raw_output or r.notes or "")[:70]
         c = status_color.get(r.status, RESET)
         print(f"{c}{r.source:<12} {r.status.value:<10}{RESET} {detail}")
 
-    detected = [r for r in results if r.status == DetectionStatus.DETECTED]
-    partial = [r for r in results if r.status == DetectionStatus.PARTIAL]
-    missed = [r for r in results if r.status == DetectionStatus.MISSED]
+    # Computed per-source verdict, straight from what each tool actually
+    # reported this run - no pre-filtering of what "counts."
+    by_source: dict[str, list] = {}
+    for r in results:
+        by_source.setdefault(r.source, []).append(r)
 
     print(f"\n{BOLD}{'=' * 72}")
-    print("VERDICT")
+    print("VERDICT (computed from this run's actual tool output)")
     print(f"{'=' * 72}{RESET}")
     ok("Ground truth confirms: both module loads and the hidden process really happened.")
-    print(f"  {GREEN}Real detections (DETECTED):{RESET}  "
-          f"{', '.join(sorted(set(r.source for r in detected))) or 'none'}")
-    print(f"  {YELLOW}Environmental noise only (PARTIAL):{RESET}  "
-          f"{', '.join(sorted(set(r.source for r in partial))) or 'none'}")
-    print(f"  {RED}Missed entirely:{RESET}  "
-          f"{', '.join(sorted(set(r.source for r in missed))) or 'none'}")
+    for source, entries in sorted(by_source.items()):
+        statuses = {e.status for e in entries}
+        if DetectionStatus.DETECTED in statuses:
+            n = sum(1 for e in entries if e.status == DetectionStatus.DETECTED)
+            print(f"  {GREEN}{source}: DETECTED{RESET}  ({n} flagged line(s) this run)")
+        elif DetectionStatus.NOT_APPLICABLE in statuses:
+            print(f"  {CYAN}{source}: N/A{RESET}  (not installed or did not run)")
+        else:
+            print(f"  {RED}{source}: MISSED{RESET}  (zero flagged lines this run)")
+
     print(
-        f"\n{BOLD}The gap:{RESET} auditd sees the module LOAD (syscall 313 / finit_module, "
-        "logged via its 'module_load' key) for both hide_process and hide_module - but has "
-        "zero visibility into the getdents64 directory-listing filter or the list_del "
-        "self-hiding that happen after load. That's the detection gap this project demonstrates."
+        f"\n{BOLD}Note:{RESET} the table above is unfiltered raw tool output - every "
+        "Warning/INFECTED line counts as DETECTED, with no manual exclusion of any "
+        "result, even known false-positive-prone ones. If a tool shows DETECTED, "
+        "say so plainly. If it shows MISSED, that's the gap for this run - report "
+        "it as-is rather than assuming it."
     )
 
     # ---- Step 7: cleanup ----------------------------------------------------
