@@ -1,216 +1,2723 @@
 eBPF ground-truth monitor running. Ctrl+C to stop.
-[GROUND TRUTH] fork: pid=15247 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15248 ppid=12712 comm=bash
-[GROUND TRUTH] exit: pid=15247
-[GROUND TRUTH] exit: pid=15237
-[GROUND TRUTH] exit: pid=15236
-[GROUND TRUTH] exit: pid=15238
-[GROUND TRUTH] exit: pid=15241
-[GROUND TRUTH] exit: pid=14698
-[GROUND TRUTH] fork: pid=15249 ppid=15248 comm=sudo
-[GROUND TRUTH] exit: pid=15249
-[GROUND TRUTH] fork: pid=15250 ppid=15248 comm=sudo
-[GROUND TRUTH] exit: pid=15250
-[GROUND TRUTH] fork: pid=15251 ppid=15248 comm=sudo
-[GROUND TRUTH] fork: pid=15252 ppid=15251 comm=sudo
-[GROUND TRUTH] exit: pid=15252
-[GROUND TRUTH] exit: pid=15251
-[GROUND TRUTH] exit: pid=15248
-[GROUND TRUTH] fork: pid=15253 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15254 ppid=15253 comm=sudo
-[GROUND TRUTH] exit: pid=15254
-[GROUND TRUTH] fork: pid=15255 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15256 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15257 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15258 ppid=15253 comm=sudo
-[GROUND TRUTH] fork: pid=15259 ppid=15258 comm=sudo
-[GROUND TRUTH] exit: pid=15259
-[GROUND TRUTH] exit: pid=15258
-[GROUND TRUTH] fork: pid=15260 ppid=2952 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15253
-[GROUND TRUTH] fork: pid=15261 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15262 ppid=545 comm=systemd-udevd
-[GROUND TRUTH] fork: pid=15263 ppid=15261 comm=sudo
-[GROUND TRUTH] exit: pid=15263
-[GROUND TRUTH] fork: pid=15264 ppid=15261 comm=sudo
-[GROUND TRUTH] fork: pid=15265 ppid=15264 comm=sudo
-[GROUND TRUTH] module load: pid=15265 comm=insmod ts=9031619697794
-[GROUND TRUTH] exit: pid=15265
-[GROUND TRUTH] exit: pid=15264
-[GROUND TRUTH] exit: pid=15261
-[GROUND TRUTH] fork: pid=15266 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15267 ppid=12712 comm=bash
-[GROUND TRUTH] exit: pid=15267
-[GROUND TRUTH] exit: pid=15266
-[GROUND TRUTH] fork: pid=15268 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15269 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15270 ppid=15269 comm=sudo
-[GROUND TRUTH] exit: pid=15270
-[GROUND TRUTH] fork: pid=15271 ppid=15269 comm=sudo
-[GROUND TRUTH] fork: pid=15272 ppid=15271 comm=sudo
-[GROUND TRUTH] exit: pid=15272
-[GROUND TRUTH] exit: pid=15271
-[GROUND TRUTH] exit: pid=15269
-[GROUND TRUTH] fork: pid=15273 ppid=12712 comm=bash
-[GROUND TRUTH] fork: pid=15274 ppid=12712 comm=bash
-[GROUND TRUTH] exit: pid=15273
-[GROUND TRUTH] exit: pid=15274
-[GROUND TRUTH] fork: pid=15275 ppid=12712 comm=bash
-[GROUND TRUTH] exit: pid=15275
-[GROUND TRUTH] exit: pid=15262
-[GROUND TRUTH] exit: pid=15221
-[GROUND TRUTH] exit: pid=15256
-[GROUND TRUTH] exit: pid=15257
-[GROUND TRUTH] exit: pid=15260
-[GROUND TRUTH] exit: pid=15255
-[GROUND TRUTH] exit: pid=15220
-[GROUND TRUTH] fork: pid=15276 ppid=12617 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15277 ppid=2 comm=kthreadd
-[GROUND TRUTH] exit: pid=12712
-[GROUND TRUTH] exit: pid=15268
-[GROUND TRUTH] exit: pid=12652
-[GROUND TRUTH] exit: pid=15136
-[GROUND TRUTH] fork: pid=15278 ppid=492 comm=systemd-journal
-[GROUND TRUTH] fork: pid=15279 ppid=492 comm=systemd-journal
-[GROUND TRUTH] exit: pid=15278
-[GROUND TRUTH] exit: pid=15279
-[GROUND TRUTH] exit: pid=15276
-[GROUND TRUTH] fork: pid=15280 ppid=1109 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15171
-[GROUND TRUTH] fork: pid=15281 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15281
-[GROUND TRUTH] fork: pid=15282 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15283 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15284 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15283
-[GROUND TRUTH] fork: pid=15285 ppid=2952 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15286 ppid=2966 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15287 ppid=12617 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15288 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15289 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15288
-[GROUND TRUTH] exit: pid=15280
-[GROUND TRUTH] fork: pid=15290 ppid=15289 comm=sudo
-[GROUND TRUTH] exit: pid=15290
-[GROUND TRUTH] fork: pid=15291 ppid=15289 comm=sudo
-[GROUND TRUTH] exit: pid=15291
-[GROUND TRUTH] fork: pid=15292 ppid=15289 comm=sudo
-[GROUND TRUTH] fork: pid=15293 ppid=15292 comm=sudo
-[GROUND TRUTH] exit: pid=15293
-[GROUND TRUTH] exit: pid=15292
-[GROUND TRUTH] exit: pid=15289
-[GROUND TRUTH] fork: pid=15294 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15295 ppid=15294 comm=sudo
-[GROUND TRUTH] exit: pid=15295
-[GROUND TRUTH] fork: pid=15296 ppid=15294 comm=sudo
-[GROUND TRUTH] fork: pid=15297 ppid=15296 comm=sudo
-[GROUND TRUTH] exit: pid=15297
-[GROUND TRUTH] exit: pid=15296
-[GROUND TRUTH] exit: pid=15294
-[GROUND TRUTH] fork: pid=15298 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15299 ppid=15298 comm=sudo
-[GROUND TRUTH] exit: pid=15299
-[GROUND TRUTH] fork: pid=15300 ppid=15298 comm=sudo
-[GROUND TRUTH] fork: pid=15301 ppid=545 comm=systemd-udevd
-[GROUND TRUTH] fork: pid=15302 ppid=15300 comm=sudo
-[GROUND TRUTH] module load: pid=15302 comm=insmod ts=9090341733571
-[GROUND TRUTH] exit: pid=15302
-[GROUND TRUTH] exit: pid=15300
-[GROUND TRUTH] exit: pid=15298
-[GROUND TRUTH] fork: pid=15303 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15304 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15303
-[GROUND TRUTH] exit: pid=15304
-[GROUND TRUTH] fork: pid=15305 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15306 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15307 ppid=15306 comm=sudo
-[GROUND TRUTH] exit: pid=15307
-[GROUND TRUTH] fork: pid=15308 ppid=15306 comm=sudo
-[GROUND TRUTH] fork: pid=15309 ppid=15308 comm=sudo
-[GROUND TRUTH] exit: pid=15309
-[GROUND TRUTH] exit: pid=15308
-[GROUND TRUTH] exit: pid=15306
-[GROUND TRUTH] fork: pid=15310 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15311 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15310
-[GROUND TRUTH] exit: pid=15311
-[GROUND TRUTH] fork: pid=15312 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15312
-[GROUND TRUTH] exit: pid=15301
-[GROUND TRUTH] fork: pid=15313 ppid=2 comm=kthreadd
-[GROUND TRUTH] exit: pid=15282
-[GROUND TRUTH] exit: pid=15285
-[GROUND TRUTH] fork: pid=15314 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15315 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15315
-[GROUND TRUTH] fork: pid=15316 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15317 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15318 ppid=2952 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15314
-[GROUND TRUTH] fork: pid=15319 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15319
-[GROUND TRUTH] exit: pid=15287
-[GROUND TRUTH] exit: pid=15113
-[GROUND TRUTH] exit: pid=15317
-[GROUND TRUTH] exit: pid=15284
-[GROUND TRUTH] exit: pid=15318
-[GROUND TRUTH] exit: pid=15316
-[GROUND TRUTH] fork: pid=15320 ppid=12617 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15321 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15323 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15322 ppid=15321 comm=sudo
-[GROUND TRUTH] fork: pid=15324 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15322
-[GROUND TRUTH] fork: pid=15325 ppid=15321 comm=sudo
-[GROUND TRUTH] fork: pid=15326 ppid=15325 comm=sudo
-[GROUND TRUTH] exit: pid=15326
-[GROUND TRUTH] exit: pid=15325
-[GROUND TRUTH] exit: pid=15321
-[GROUND TRUTH] fork: pid=15327 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15328 ppid=2952 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15327
-[GROUND TRUTH] fork: pid=15329 ppid=545 comm=systemd-udevd
-[GROUND TRUTH] exit: pid=15329
-[GROUND TRUTH] exit: pid=15286
-[GROUND TRUTH] exit: pid=15320
-[GROUND TRUTH] exit: pid=15324
-[GROUND TRUTH] exit: pid=15328
-[GROUND TRUTH] exit: pid=15323
-[GROUND TRUTH] fork: pid=15330 ppid=2966 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15331 ppid=12617 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15332 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15333 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15334 ppid=15332 comm=sudo
-[GROUND TRUTH] exit: pid=15334
-[GROUND TRUTH] fork: pid=15335 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15336 ppid=3520 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15337 ppid=15332 comm=sudo
-[GROUND TRUTH] fork: pid=15338 ppid=15337 comm=sudo
-[GROUND TRUTH] fork: pid=15339 ppid=2952 comm=pool-spawner
-[GROUND TRUTH] module load: pid=15338 comm=insmod ts=9149262446144
-[GROUND TRUTH] exit: pid=15338
-[GROUND TRUTH] exit: pid=15337
-[GROUND TRUTH] exit: pid=15332
-[GROUND TRUTH] fork: pid=15340 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15341 ppid=13309 comm=bash
-[GROUND TRUTH] fork: pid=15342 ppid=545 comm=systemd-udevd
-[GROUND TRUTH] exit: pid=15340
-[GROUND TRUTH] exit: pid=15341
-[GROUND TRUTH] fork: pid=15343 ppid=13309 comm=bash
-[GROUND TRUTH] exit: pid=15343
-[GROUND TRUTH] exit: pid=15342
-[GROUND TRUTH] exit: pid=15330
-[GROUND TRUTH] exit: pid=15331
-[GROUND TRUTH] exit: pid=15335
-[GROUND TRUTH] exit: pid=15333
-[GROUND TRUTH] exit: pid=15339
-[GROUND TRUTH] exit: pid=15336
-[GROUND TRUTH] exit: pid=12033
-[GROUND TRUTH] fork: pid=15344 ppid=2966 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15345 ppid=2966 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15346 ppid=2966 comm=pool-spawner
-[GROUND TRUTH] fork: pid=15347 ppid=2966 comm=pool-spawner
-[GROUND TRUTH] exit: pid=15344
-[GROUND TRUTH] exit: pid=15345
-[GROUND TRUTH] exit: pid=15346
-[GROUND TRUTH] exit: pid=15347
+[GROUND TRUTH] exit: pid=279110
+[GROUND TRUTH] exit: pid=279112
+[GROUND TRUTH] exit: pid=279122
+[GROUND TRUTH] exit: pid=279155
+[GROUND TRUTH] exit: pid=279156
+[GROUND TRUTH] fork: pid=279279 ppid=278929 comm=ptyxis-agent
+[GROUND TRUTH] fork: pid=279280 ppid=279279 comm=bash
+[GROUND TRUTH] exit: pid=279280
+[GROUND TRUTH] fork: pid=279281 ppid=279279 comm=bash
+[GROUND TRUTH] exit: pid=279281
+[GROUND TRUTH] fork: pid=279282 ppid=279279 comm=bash
+[GROUND TRUTH] fork: pid=279283 ppid=279282 comm=lesspipe
+[GROUND TRUTH] exit: pid=279283
+[GROUND TRUTH] fork: pid=279284 ppid=279282 comm=lesspipe
+[GROUND TRUTH] fork: pid=279285 ppid=279284 comm=lesspipe
+[GROUND TRUTH] exit: pid=279285
+[GROUND TRUTH] exit: pid=279284
+[GROUND TRUTH] exit: pid=279282
+[GROUND TRUTH] fork: pid=279286 ppid=279279 comm=bash
+[GROUND TRUTH] exit: pid=279286
+[GROUND TRUTH] fork: pid=279287 ppid=279279 comm=bash
+[GROUND TRUTH] exit: pid=279287
+[GROUND TRUTH] fork: pid=279288 ppid=279279 comm=bash
+[GROUND TRUTH] exit: pid=279288
+[GROUND TRUTH] fork: pid=279289 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279290 ppid=278920 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279291 ppid=279279 comm=bash
+[GROUND TRUTH] fork: pid=279292 ppid=3451 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279293 ppid=3451 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279294 ppid=2981 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279295 ppid=279291 comm=sudo
+[GROUND TRUTH] exit: pid=279295
+[GROUND TRUTH] fork: pid=279296 ppid=279291 comm=sudo
+[GROUND TRUTH] exit: pid=279296
+[GROUND TRUTH] fork: pid=279297 ppid=279291 comm=sudo
+[GROUND TRUTH] fork: pid=279298 ppid=279297 comm=sudo
+[GROUND TRUTH] fork: pid=279299 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279299
+[GROUND TRUTH] fork: pid=279300 ppid=279298 comm=python3
+[GROUND TRUTH] fork: pid=279301 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279301
+[GROUND TRUTH] fork: pid=279302 ppid=492 comm=systemd-journal
+[GROUND TRUTH] fork: pid=279303 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=279303
+[GROUND TRUTH] exit: pid=279302
+[GROUND TRUTH] fork: pid=279304 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279304
+[GROUND TRUTH] fork: pid=279305 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279305
+[GROUND TRUTH] fork: pid=279306 ppid=279298 comm=python3
+[GROUND TRUTH] module load: pid=279306 comm=insmod ts=11159841995560
+[GROUND TRUTH] exit: pid=279306
+[GROUND TRUTH] fork: pid=279307 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279307
+[GROUND TRUTH] fork: pid=279308 ppid=573 comm=systemd-udevd
+[GROUND TRUTH] fork: pid=279309 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=279289
+[GROUND TRUTH] exit: pid=279290
+[GROUND TRUTH] exit: pid=279308
+[GROUND TRUTH] exit: pid=279292
+[GROUND TRUTH] exit: pid=279293
+[GROUND TRUTH] exit: pid=279294
+[GROUND TRUTH] exit: pid=279309
+[GROUND TRUTH] fork: pid=279310 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279310
+[GROUND TRUTH] fork: pid=279311 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279311
+[GROUND TRUTH] fork: pid=279312 ppid=279298 comm=python3
+[GROUND TRUTH] fork: pid=279313 ppid=279312 comm=bash
+[GROUND TRUTH] exit: pid=279313
+[GROUND TRUTH] exit: pid=279312
+[GROUND TRUTH] fork: pid=279314 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279314
+[GROUND TRUTH] fork: pid=279315 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279315
+[GROUND TRUTH] fork: pid=279316 ppid=279298 comm=python3
+[GROUND TRUTH] module load: pid=279316 comm=insmod ts=11171996732779
+[GROUND TRUTH] exit: pid=279316
+[GROUND TRUTH] fork: pid=279317 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279317
+[GROUND TRUTH] fork: pid=279318 ppid=573 comm=systemd-udevd
+[GROUND TRUTH] exit: pid=279318
+[GROUND TRUTH] fork: pid=279319 ppid=279298 comm=python3
+[GROUND TRUTH] fork: pid=279320 ppid=279319 comm=bash
+[GROUND TRUTH] fork: pid=279321 ppid=279319 comm=bash
+[GROUND TRUTH] exit: pid=279320
+[GROUND TRUTH] exit: pid=279321
+[GROUND TRUTH] exit: pid=279319
+[GROUND TRUTH] fork: pid=279322 ppid=279298 comm=python3
+[GROUND TRUTH] exit: pid=279322
+[GROUND TRUTH] fork: pid=279323 ppid=279298 comm=python3
+[GROUND TRUTH] fork: pid=279324 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279325 ppid=279324 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279325
+[GROUND TRUTH] fork: pid=279326 ppid=279324 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279326
+[GROUND TRUTH] exit: pid=279324
+[GROUND TRUTH] fork: pid=279327 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279327
+[GROUND TRUTH] fork: pid=279328 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279328
+[GROUND TRUTH] fork: pid=279329 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279329
+[GROUND TRUTH] fork: pid=279330 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279330
+[GROUND TRUTH] fork: pid=279331 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279331
+[GROUND TRUTH] fork: pid=279332 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279332
+[GROUND TRUTH] fork: pid=279333 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279333
+[GROUND TRUTH] fork: pid=279334 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279334
+[GROUND TRUTH] fork: pid=279335 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279335
+[GROUND TRUTH] fork: pid=279336 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279336
+[GROUND TRUTH] fork: pid=279337 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279337
+[GROUND TRUTH] fork: pid=279338 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279338
+[GROUND TRUTH] fork: pid=279339 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279339
+[GROUND TRUTH] fork: pid=279340 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279340
+[GROUND TRUTH] fork: pid=279341 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279341
+[GROUND TRUTH] fork: pid=279342 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279342
+[GROUND TRUTH] fork: pid=279343 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279343
+[GROUND TRUTH] fork: pid=279344 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279345 ppid=279344 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279346 ppid=279344 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279347 ppid=279344 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279345
+[GROUND TRUTH] exit: pid=279346
+[GROUND TRUTH] exit: pid=279347
+[GROUND TRUTH] exit: pid=279344
+[GROUND TRUTH] fork: pid=279348 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279349 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279348
+[GROUND TRUTH] exit: pid=279349
+[GROUND TRUTH] fork: pid=279350 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279350
+[GROUND TRUTH] fork: pid=279351 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279351
+[GROUND TRUTH] fork: pid=279352 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279352
+[GROUND TRUTH] fork: pid=279353 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279354 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279353
+[GROUND TRUTH] exit: pid=279354
+[GROUND TRUTH] fork: pid=279355 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279355
+[GROUND TRUTH] fork: pid=279356 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279356
+[GROUND TRUTH] fork: pid=279357 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279358 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279358
+[GROUND TRUTH] exit: pid=279357
+[GROUND TRUTH] fork: pid=279359 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279360 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279359
+[GROUND TRUTH] exit: pid=279360
+[GROUND TRUTH] fork: pid=279361 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279361
+[GROUND TRUTH] fork: pid=279362 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279362
+[GROUND TRUTH] fork: pid=279363 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279363
+[GROUND TRUTH] fork: pid=279364 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279364
+[GROUND TRUTH] fork: pid=279365 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279365
+[GROUND TRUTH] fork: pid=279366 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279366
+[GROUND TRUTH] fork: pid=279367 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279367
+[GROUND TRUTH] fork: pid=279368 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279368
+[GROUND TRUTH] fork: pid=279369 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279370 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279369
+[GROUND TRUTH] exit: pid=279370
+[GROUND TRUTH] fork: pid=279371 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279371
+[GROUND TRUTH] fork: pid=279372 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279372
+[GROUND TRUTH] fork: pid=279373 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279373
+[GROUND TRUTH] fork: pid=279374 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279374
+[GROUND TRUTH] fork: pid=279375 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279376 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279375
+[GROUND TRUTH] exit: pid=279376
+[GROUND TRUTH] fork: pid=279377 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279378 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279377
+[GROUND TRUTH] exit: pid=279378
+[GROUND TRUTH] fork: pid=279379 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279379
+[GROUND TRUTH] fork: pid=279380 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279380
+[GROUND TRUTH] fork: pid=279381 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279382 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279381
+[GROUND TRUTH] exit: pid=279382
+[GROUND TRUTH] fork: pid=279383 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279384 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279383
+[GROUND TRUTH] exit: pid=279384
+[GROUND TRUTH] fork: pid=279385 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279385
+[GROUND TRUTH] fork: pid=279386 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279386
+[GROUND TRUTH] fork: pid=279387 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279388 ppid=279387 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279389 ppid=279387 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279388
+[GROUND TRUTH] exit: pid=279389
+[GROUND TRUTH] exit: pid=279387
+[GROUND TRUTH] fork: pid=279390 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279391 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279390
+[GROUND TRUTH] exit: pid=279391
+[GROUND TRUTH] fork: pid=279392 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279392
+[GROUND TRUTH] fork: pid=279393 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279393
+[GROUND TRUTH] fork: pid=279394 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279395 ppid=279394 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279395
+[GROUND TRUTH] fork: pid=279396 ppid=279394 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279396
+[GROUND TRUTH] exit: pid=279394
+[GROUND TRUTH] fork: pid=279397 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279398 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279397
+[GROUND TRUTH] exit: pid=279398
+[GROUND TRUTH] fork: pid=279399 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279400 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279399
+[GROUND TRUTH] exit: pid=279400
+[GROUND TRUTH] fork: pid=279401 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279402 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279401
+[GROUND TRUTH] exit: pid=279402
+[GROUND TRUTH] fork: pid=279403 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279403
+[GROUND TRUTH] fork: pid=279404 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279404
+[GROUND TRUTH] fork: pid=279405 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279406 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279405
+[GROUND TRUTH] exit: pid=279406
+[GROUND TRUTH] fork: pid=279407 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279408 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279407
+[GROUND TRUTH] exit: pid=279408
+[GROUND TRUTH] fork: pid=279409 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279409
+[GROUND TRUTH] fork: pid=279410 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279410
+[GROUND TRUTH] fork: pid=279411 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279412 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279412
+[GROUND TRUTH] exit: pid=279411
+[GROUND TRUTH] fork: pid=279413 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279414 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279413
+[GROUND TRUTH] exit: pid=279414
+[GROUND TRUTH] fork: pid=279415 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279416 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279415
+[GROUND TRUTH] exit: pid=279416
+[GROUND TRUTH] fork: pid=279417 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279417
+[GROUND TRUTH] fork: pid=279418 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279418
+[GROUND TRUTH] fork: pid=279419 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279420 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279419
+[GROUND TRUTH] exit: pid=279420
+[GROUND TRUTH] fork: pid=279421 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279422 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279421
+[GROUND TRUTH] exit: pid=279422
+[GROUND TRUTH] fork: pid=279423 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279424 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279423
+[GROUND TRUTH] exit: pid=279424
+[GROUND TRUTH] fork: pid=279425 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279425
+[GROUND TRUTH] fork: pid=279426 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279426
+[GROUND TRUTH] fork: pid=279427 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279428 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279427
+[GROUND TRUTH] exit: pid=279428
+[GROUND TRUTH] fork: pid=279429 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279430 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279429
+[GROUND TRUTH] exit: pid=279430
+[GROUND TRUTH] fork: pid=279431 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279431
+[GROUND TRUTH] fork: pid=279432 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279432
+[GROUND TRUTH] fork: pid=279433 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279434 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279433
+[GROUND TRUTH] exit: pid=279434
+[GROUND TRUTH] fork: pid=279435 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279436 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279435
+[GROUND TRUTH] exit: pid=279436
+[GROUND TRUTH] fork: pid=279437 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279438 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279437
+[GROUND TRUTH] exit: pid=279438
+[GROUND TRUTH] fork: pid=279439 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279439
+[GROUND TRUTH] fork: pid=279440 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279440
+[GROUND TRUTH] fork: pid=279441 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279442 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279441
+[GROUND TRUTH] exit: pid=279442
+[GROUND TRUTH] fork: pid=279443 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279444 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279443
+[GROUND TRUTH] exit: pid=279444
+[GROUND TRUTH] fork: pid=279445 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279445
+[GROUND TRUTH] fork: pid=279446 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279446
+[GROUND TRUTH] fork: pid=279447 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279447
+[GROUND TRUTH] fork: pid=279448 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279449 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279448
+[GROUND TRUTH] exit: pid=279449
+[GROUND TRUTH] fork: pid=279450 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279450
+[GROUND TRUTH] fork: pid=279451 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279451
+[GROUND TRUTH] fork: pid=279452 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279453 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279452
+[GROUND TRUTH] exit: pid=279453
+[GROUND TRUTH] fork: pid=279454 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279454
+[GROUND TRUTH] fork: pid=279455 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279455
+[GROUND TRUTH] fork: pid=279456 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279457 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279456
+[GROUND TRUTH] exit: pid=279457
+[GROUND TRUTH] fork: pid=279458 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279459 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279458
+[GROUND TRUTH] exit: pid=279459
+[GROUND TRUTH] fork: pid=279460 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279461 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279460
+[GROUND TRUTH] exit: pid=279461
+[GROUND TRUTH] fork: pid=279462 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279462
+[GROUND TRUTH] fork: pid=279463 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279463
+[GROUND TRUTH] fork: pid=279464 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279465 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279464
+[GROUND TRUTH] exit: pid=279465
+[GROUND TRUTH] fork: pid=279466 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279467 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279466
+[GROUND TRUTH] exit: pid=279467
+[GROUND TRUTH] fork: pid=279468 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279468
+[GROUND TRUTH] fork: pid=279469 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279469
+[GROUND TRUTH] fork: pid=279470 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279471 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279470
+[GROUND TRUTH] exit: pid=279471
+[GROUND TRUTH] fork: pid=279472 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279473 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279472
+[GROUND TRUTH] exit: pid=279473
+[GROUND TRUTH] fork: pid=279474 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279474
+[GROUND TRUTH] fork: pid=279475 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279475
+[GROUND TRUTH] fork: pid=279476 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279477 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279476
+[GROUND TRUTH] exit: pid=279477
+[GROUND TRUTH] fork: pid=279478 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279479 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279478
+[GROUND TRUTH] exit: pid=279479
+[GROUND TRUTH] fork: pid=279480 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279481 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279480
+[GROUND TRUTH] exit: pid=279481
+[GROUND TRUTH] fork: pid=279482 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279482
+[GROUND TRUTH] fork: pid=279483 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279484 ppid=279483 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279485 ppid=279483 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279486 ppid=279483 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279487 ppid=279483 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279488 ppid=279483 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279489 ppid=279483 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279490 ppid=279488 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279491 ppid=279488 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279490
+[GROUND TRUTH] exit: pid=279491
+[GROUND TRUTH] fork: pid=279492 ppid=279488 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279493 ppid=279492 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279493
+[GROUND TRUTH] fork: pid=279494 ppid=279492 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279494
+[GROUND TRUTH] exit: pid=279492
+[GROUND TRUTH] fork: pid=279495 ppid=279488 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279486
+[GROUND TRUTH] exit: pid=279485
+[GROUND TRUTH] exit: pid=279484
+[GROUND TRUTH] exit: pid=279487
+[GROUND TRUTH] exit: pid=279495
+[GROUND TRUTH] exit: pid=279488
+[GROUND TRUTH] exit: pid=279489
+[GROUND TRUTH] exit: pid=279483
+[GROUND TRUTH] fork: pid=279496 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279496
+[GROUND TRUTH] fork: pid=279497 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279498 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279497
+[GROUND TRUTH] exit: pid=279498
+[GROUND TRUTH] fork: pid=279499 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279499
+[GROUND TRUTH] fork: pid=279500 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279500
+[GROUND TRUTH] fork: pid=279501 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279502 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279501
+[GROUND TRUTH] exit: pid=279502
+[GROUND TRUTH] fork: pid=279503 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279503
+[GROUND TRUTH] fork: pid=279504 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279504
+[GROUND TRUTH] fork: pid=279505 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279506 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279505
+[GROUND TRUTH] exit: pid=279506
+[GROUND TRUTH] fork: pid=279507 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279507
+[GROUND TRUTH] fork: pid=279508 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279508
+[GROUND TRUTH] fork: pid=279509 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279510 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279510
+[GROUND TRUTH] exit: pid=279509
+[GROUND TRUTH] fork: pid=279511 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279512 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279511
+[GROUND TRUTH] exit: pid=279512
+[GROUND TRUTH] fork: pid=279513 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279513
+[GROUND TRUTH] fork: pid=279514 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279514
+[GROUND TRUTH] fork: pid=279515 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279516 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279515
+[GROUND TRUTH] exit: pid=279516
+[GROUND TRUTH] fork: pid=279517 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279518 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279517
+[GROUND TRUTH] exit: pid=279518
+[GROUND TRUTH] fork: pid=279519 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279519
+[GROUND TRUTH] fork: pid=279520 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279520
+[GROUND TRUTH] fork: pid=279521 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279522 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279521
+[GROUND TRUTH] exit: pid=279522
+[GROUND TRUTH] fork: pid=279523 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279523
+[GROUND TRUTH] fork: pid=279524 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279524
+[GROUND TRUTH] fork: pid=279525 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279526 ppid=279525 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279527 ppid=279525 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279526
+[GROUND TRUTH] exit: pid=279527
+[GROUND TRUTH] exit: pid=279525
+[GROUND TRUTH] fork: pid=279528 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279529 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279528
+[GROUND TRUTH] exit: pid=279529
+[GROUND TRUTH] fork: pid=279530 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279531 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279530
+[GROUND TRUTH] exit: pid=279531
+[GROUND TRUTH] fork: pid=279532 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279532
+[GROUND TRUTH] fork: pid=279533 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279533
+[GROUND TRUTH] fork: pid=279534 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279535 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279534
+[GROUND TRUTH] exit: pid=279535
+[GROUND TRUTH] fork: pid=279536 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279537 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279536
+[GROUND TRUTH] exit: pid=279537
+[GROUND TRUTH] fork: pid=279538 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279538
+[GROUND TRUTH] fork: pid=279539 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279539
+[GROUND TRUTH] fork: pid=279540 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279541 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279540
+[GROUND TRUTH] exit: pid=279541
+[GROUND TRUTH] fork: pid=279542 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279543 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279542
+[GROUND TRUTH] exit: pid=279543
+[GROUND TRUTH] fork: pid=279544 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279544
+[GROUND TRUTH] fork: pid=279545 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279545
+[GROUND TRUTH] fork: pid=279546 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279547 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279546
+[GROUND TRUTH] exit: pid=279547
+[GROUND TRUTH] fork: pid=279548 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279549 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279548
+[GROUND TRUTH] exit: pid=279549
+[GROUND TRUTH] fork: pid=279550 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279551 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279550
+[GROUND TRUTH] exit: pid=279551
+[GROUND TRUTH] fork: pid=279552 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279552
+[GROUND TRUTH] fork: pid=279553 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279553
+[GROUND TRUTH] fork: pid=279554 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279555 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279554
+[GROUND TRUTH] exit: pid=279555
+[GROUND TRUTH] fork: pid=279556 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279556
+[GROUND TRUTH] fork: pid=279557 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279557
+[GROUND TRUTH] fork: pid=279558 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279559 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279558
+[GROUND TRUTH] exit: pid=279559
+[GROUND TRUTH] fork: pid=279560 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279561 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279560
+[GROUND TRUTH] exit: pid=279561
+[GROUND TRUTH] fork: pid=279562 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279562
+[GROUND TRUTH] fork: pid=279563 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279563
+[GROUND TRUTH] fork: pid=279564 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279564
+[GROUND TRUTH] fork: pid=279565 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279565
+[GROUND TRUTH] fork: pid=279566 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279566
+[GROUND TRUTH] fork: pid=279567 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279567
+[GROUND TRUTH] fork: pid=279568 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279568
+[GROUND TRUTH] fork: pid=279569 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279570 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279569
+[GROUND TRUTH] exit: pid=279570
+[GROUND TRUTH] fork: pid=279571 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279572 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279571
+[GROUND TRUTH] exit: pid=279572
+[GROUND TRUTH] fork: pid=279573 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279573
+[GROUND TRUTH] fork: pid=279574 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279574
+[GROUND TRUTH] fork: pid=279575 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279576 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279576
+[GROUND TRUTH] exit: pid=279575
+[GROUND TRUTH] fork: pid=279577 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279577
+[GROUND TRUTH] fork: pid=279578 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279578
+[GROUND TRUTH] fork: pid=279579 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279579
+[GROUND TRUTH] fork: pid=279580 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279580
+[GROUND TRUTH] fork: pid=279581 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279582 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279581
+[GROUND TRUTH] exit: pid=279582
+[GROUND TRUTH] fork: pid=279583 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279583
+[GROUND TRUTH] fork: pid=279584 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279584
+[GROUND TRUTH] fork: pid=279585 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279586 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279585
+[GROUND TRUTH] exit: pid=279586
+[GROUND TRUTH] fork: pid=279587 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279587
+[GROUND TRUTH] fork: pid=279588 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279588
+[GROUND TRUTH] fork: pid=279589 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279590 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279589
+[GROUND TRUTH] exit: pid=279590
+[GROUND TRUTH] fork: pid=279591 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279592 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279591
+[GROUND TRUTH] exit: pid=279592
+[GROUND TRUTH] fork: pid=279593 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279593
+[GROUND TRUTH] fork: pid=279594 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279594
+[GROUND TRUTH] fork: pid=279595 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279596 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279595
+[GROUND TRUTH] exit: pid=279596
+[GROUND TRUTH] fork: pid=279597 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279598 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279597
+[GROUND TRUTH] exit: pid=279598
+[GROUND TRUTH] fork: pid=279599 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279599
+[GROUND TRUTH] fork: pid=279600 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279600
+[GROUND TRUTH] fork: pid=279601 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279602 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279601
+[GROUND TRUTH] exit: pid=279602
+[GROUND TRUTH] fork: pid=279603 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279603
+[GROUND TRUTH] fork: pid=279604 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279604
+[GROUND TRUTH] fork: pid=279605 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279605
+[GROUND TRUTH] fork: pid=279606 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279606
+[GROUND TRUTH] fork: pid=279607 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279607
+[GROUND TRUTH] fork: pid=279608 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279608
+[GROUND TRUTH] fork: pid=279609 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279609
+[GROUND TRUTH] fork: pid=279610 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279610
+[GROUND TRUTH] fork: pid=279611 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279611
+[GROUND TRUTH] fork: pid=279612 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279612
+[GROUND TRUTH] fork: pid=279613 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279614 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279613
+[GROUND TRUTH] exit: pid=279614
+[GROUND TRUTH] fork: pid=279615 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279615
+[GROUND TRUTH] fork: pid=279616 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279616
+[GROUND TRUTH] fork: pid=279617 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279618 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279617
+[GROUND TRUTH] exit: pid=279618
+[GROUND TRUTH] fork: pid=279619 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279619
+[GROUND TRUTH] fork: pid=279620 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279620
+[GROUND TRUTH] fork: pid=279621 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279621
+[GROUND TRUTH] fork: pid=279622 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279623 ppid=279622 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279624 ppid=279622 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279625 ppid=279622 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279626 ppid=279622 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279627 ppid=279622 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279628 ppid=279627 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279629 ppid=279622 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279630 ppid=279627 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279628
+[GROUND TRUTH] exit: pid=279630
+[GROUND TRUTH] fork: pid=279631 ppid=279627 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279632 ppid=279631 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279633 ppid=279631 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279632
+[GROUND TRUTH] exit: pid=279633
+[GROUND TRUTH] exit: pid=279631
+[GROUND TRUTH] fork: pid=279634 ppid=279627 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279623
+[GROUND TRUTH] exit: pid=279624
+[GROUND TRUTH] exit: pid=279625
+[GROUND TRUTH] exit: pid=279626
+[GROUND TRUTH] exit: pid=279634
+[GROUND TRUTH] exit: pid=279627
+[GROUND TRUTH] exit: pid=279629
+[GROUND TRUTH] exit: pid=279622
+[GROUND TRUTH] fork: pid=279635 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279635
+[GROUND TRUTH] fork: pid=279636 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279636
+[GROUND TRUTH] fork: pid=279637 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279637
+[GROUND TRUTH] fork: pid=279638 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279638
+[GROUND TRUTH] fork: pid=279639 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279639
+[GROUND TRUTH] fork: pid=279640 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279641 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279640
+[GROUND TRUTH] exit: pid=279641
+[GROUND TRUTH] fork: pid=279642 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279642
+[GROUND TRUTH] fork: pid=279643 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279643
+[GROUND TRUTH] fork: pid=279644 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279645 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279644
+[GROUND TRUTH] exit: pid=279645
+[GROUND TRUTH] fork: pid=279646 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279646
+[GROUND TRUTH] fork: pid=279647 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279647
+[GROUND TRUTH] fork: pid=279648 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279648
+[GROUND TRUTH] fork: pid=279649 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279650 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279651 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279649
+[GROUND TRUTH] exit: pid=279650
+[GROUND TRUTH] exit: pid=279651
+[GROUND TRUTH] fork: pid=279652 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279652
+[GROUND TRUTH] fork: pid=279653 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279654 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279653
+[GROUND TRUTH] exit: pid=279654
+[GROUND TRUTH] fork: pid=279655 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279655
+[GROUND TRUTH] fork: pid=279656 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279656
+[GROUND TRUTH] fork: pid=279657 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279658 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279657
+[GROUND TRUTH] exit: pid=279658
+[GROUND TRUTH] fork: pid=279659 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279659
+[GROUND TRUTH] fork: pid=279660 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279660
+[GROUND TRUTH] fork: pid=279661 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279661
+[GROUND TRUTH] fork: pid=279662 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279662
+[GROUND TRUTH] fork: pid=279663 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279664 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279663
+[GROUND TRUTH] exit: pid=279664
+[GROUND TRUTH] fork: pid=279665 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279666 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279665
+[GROUND TRUTH] exit: pid=279666
+[GROUND TRUTH] fork: pid=279667 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279667
+[GROUND TRUTH] fork: pid=279668 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279668
+[GROUND TRUTH] fork: pid=279669 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279669
+[GROUND TRUTH] fork: pid=279670 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279671 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279670
+[GROUND TRUTH] exit: pid=279671
+[GROUND TRUTH] fork: pid=279672 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279672
+[GROUND TRUTH] fork: pid=279673 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279673
+[GROUND TRUTH] fork: pid=279674 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279674
+[GROUND TRUTH] fork: pid=279675 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279676 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279675
+[GROUND TRUTH] exit: pid=279676
+[GROUND TRUTH] fork: pid=279677 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279677
+[GROUND TRUTH] fork: pid=279678 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279678
+[GROUND TRUTH] fork: pid=279679 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279680 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279679
+[GROUND TRUTH] exit: pid=279680
+[GROUND TRUTH] fork: pid=279681 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279681
+[GROUND TRUTH] fork: pid=279682 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279682
+[GROUND TRUTH] fork: pid=279683 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279684 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279683
+[GROUND TRUTH] exit: pid=279684
+[GROUND TRUTH] fork: pid=279685 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279685
+[GROUND TRUTH] fork: pid=279686 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279686
+[GROUND TRUTH] fork: pid=279687 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279687
+[GROUND TRUTH] fork: pid=279688 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279688
+[GROUND TRUTH] fork: pid=279689 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279690 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279689
+[GROUND TRUTH] exit: pid=279690
+[GROUND TRUTH] fork: pid=279691 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279692 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279691
+[GROUND TRUTH] exit: pid=279692
+[GROUND TRUTH] fork: pid=279693 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279693
+[GROUND TRUTH] fork: pid=279694 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279694
+[GROUND TRUTH] fork: pid=279695 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279696 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279695
+[GROUND TRUTH] exit: pid=279696
+[GROUND TRUTH] fork: pid=279697 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279697
+[GROUND TRUTH] fork: pid=279698 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279698
+[GROUND TRUTH] fork: pid=279699 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279699
+[GROUND TRUTH] fork: pid=279700 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279700
+[GROUND TRUTH] fork: pid=279701 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279701
+[GROUND TRUTH] fork: pid=279702 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279702
+[GROUND TRUTH] fork: pid=279703 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279703
+[GROUND TRUTH] fork: pid=279704 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279705 ppid=279704 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279706 ppid=279704 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279705
+[GROUND TRUTH] exit: pid=279706
+[GROUND TRUTH] exit: pid=279704
+[GROUND TRUTH] fork: pid=279707 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279707
+[GROUND TRUTH] fork: pid=279708 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279708
+[GROUND TRUTH] fork: pid=279709 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279709
+[GROUND TRUTH] fork: pid=279710 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279711 ppid=279710 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279712 ppid=279710 comm=chkrootkit
+[GROUND TRUTH] exit: pid=255505
+[GROUND TRUTH] exit: pid=279712
+[GROUND TRUTH] exit: pid=279711
+[GROUND TRUTH] exit: pid=279710
+[GROUND TRUTH] fork: pid=279713 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279713
+[GROUND TRUTH] fork: pid=279714 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279714
+[GROUND TRUTH] fork: pid=279715 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279715
+[GROUND TRUTH] fork: pid=279716 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279716
+[GROUND TRUTH] fork: pid=279717 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279717
+[GROUND TRUTH] fork: pid=279718 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279719 ppid=2 comm=kthreadd
+[GROUND TRUTH] exit: pid=279718
+[GROUND TRUTH] fork: pid=279720 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279721 ppid=279720 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279722 ppid=279721 comm=check_if_debian
+[GROUND TRUTH] fork: pid=279723 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=279722
+[GROUND TRUTH] exit: pid=279721
+[GROUND TRUTH] exit: pid=279720
+[GROUND TRUTH] fork: pid=279724 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279725 ppid=279724 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279726 ppid=279725 comm=check_if_debian
+[GROUND TRUTH] fork: pid=279727 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279727
+[GROUND TRUTH] fork: pid=279728 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279728
+[GROUND TRUTH] fork: pid=279729 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279730 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279729
+[GROUND TRUTH] exit: pid=279730
+[GROUND TRUTH] fork: pid=279731 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279731
+[GROUND TRUTH] fork: pid=279732 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279732
+[GROUND TRUTH] fork: pid=279733 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279733
+[GROUND TRUTH] fork: pid=279734 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279734
+[GROUND TRUTH] fork: pid=279735 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279735
+[GROUND TRUTH] fork: pid=279736 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279736
+[GROUND TRUTH] fork: pid=279737 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279737
+[GROUND TRUTH] fork: pid=279738 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279739 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279738
+[GROUND TRUTH] exit: pid=279739
+[GROUND TRUTH] fork: pid=279740 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279741 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279740
+[GROUND TRUTH] exit: pid=279726
+[GROUND TRUTH] exit: pid=279725
+[GROUND TRUTH] exit: pid=279724
+[GROUND TRUTH] fork: pid=279742 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279743 ppid=279742 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279744 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279741
+[GROUND TRUTH] fork: pid=279745 ppid=279743 comm=check_if_debian
+[GROUND TRUTH] fork: pid=279746 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279744
+[GROUND TRUTH] exit: pid=279746
+[GROUND TRUTH] fork: pid=279747 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279747
+[GROUND TRUTH] fork: pid=279748 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279748
+[GROUND TRUTH] fork: pid=279749 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279750 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279749
+[GROUND TRUTH] fork: pid=279751 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279750
+[GROUND TRUTH] fork: pid=279752 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279751
+[GROUND TRUTH] fork: pid=279753 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279752
+[GROUND TRUTH] exit: pid=279753
+[GROUND TRUTH] fork: pid=279754 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279754
+[GROUND TRUTH] fork: pid=279755 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279755
+[GROUND TRUTH] fork: pid=279756 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279757 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279756
+[GROUND TRUTH] fork: pid=279758 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279757
+[GROUND TRUTH] exit: pid=279758
+[GROUND TRUTH] fork: pid=279759 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279759
+[GROUND TRUTH] fork: pid=279760 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279760
+[GROUND TRUTH] fork: pid=279761 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279723
+[GROUND TRUTH] exit: pid=279761
+[GROUND TRUTH] exit: pid=279745
+[GROUND TRUTH] fork: pid=279762 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279743
+[GROUND TRUTH] exit: pid=279742
+[GROUND TRUTH] fork: pid=279763 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279764 ppid=279763 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279765 ppid=279764 comm=check_if_debian
+[GROUND TRUTH] fork: pid=279766 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279762
+[GROUND TRUTH] fork: pid=279767 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279766
+[GROUND TRUTH] exit: pid=279767
+[GROUND TRUTH] fork: pid=279768 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279769 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279768
+[GROUND TRUTH] fork: pid=279770 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279769
+[GROUND TRUTH] exit: pid=279770
+[GROUND TRUTH] fork: pid=279771 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279771
+[GROUND TRUTH] fork: pid=279772 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279772
+[GROUND TRUTH] fork: pid=279773 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279773
+[GROUND TRUTH] fork: pid=279774 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279774
+[GROUND TRUTH] fork: pid=279775 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279776 ppid=255771 comm=ThreadPoolForeg
+[GROUND TRUTH] exit: pid=279775
+[GROUND TRUTH] fork: pid=279777 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279777
+[GROUND TRUTH] fork: pid=279778 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279778
+[GROUND TRUTH] fork: pid=279779 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279779
+[GROUND TRUTH] exit: pid=279765
+[GROUND TRUTH] exit: pid=279764
+[GROUND TRUTH] exit: pid=279763
+[GROUND TRUTH] fork: pid=279780 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279781 ppid=279780 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279782 ppid=279781 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279782
+[GROUND TRUTH] exit: pid=279781
+[GROUND TRUTH] exit: pid=279780
+[GROUND TRUTH] fork: pid=279783 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279784 ppid=279783 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279785 ppid=279784 comm=check_if_debian
+[GROUND TRUTH] fork: pid=279786 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=279787 ppid=279786 comm=sh
+[GROUND TRUTH] exit: pid=279787
+[GROUND TRUTH] exit: pid=279786
+[GROUND TRUTH] fork: pid=279788 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=279789 ppid=279788 comm=sh
+[GROUND TRUTH] exit: pid=279789
+[GROUND TRUTH] exit: pid=279788
+[GROUND TRUTH] fork: pid=279790 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=279791 ppid=279790 comm=sh
+[GROUND TRUTH] fork: pid=279792 ppid=279791 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=279792
+[GROUND TRUTH] fork: pid=279793 ppid=279791 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=279793
+[GROUND TRUTH] fork: pid=279794 ppid=279791 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=279795 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279795
+[GROUND TRUTH] exit: pid=279794
+[GROUND TRUTH] fork: pid=279796 ppid=279791 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=279796
+[GROUND TRUTH] fork: pid=279797 ppid=279791 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=279797
+[GROUND TRUTH] fork: pid=279798 ppid=279791 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=279798
+[GROUND TRUTH] exit: pid=279791
+[GROUND TRUTH] exit: pid=279790
+[GROUND TRUTH] exit: pid=279785
+[GROUND TRUTH] exit: pid=279784
+[GROUND TRUTH] exit: pid=279783
+[GROUND TRUTH] fork: pid=279799 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279800 ppid=279799 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279801 ppid=279800 comm=check_if_debian
+[GROUND TRUTH] exit: pid=268103
+[GROUND TRUTH] exit: pid=278756
+[GROUND TRUTH] exit: pid=279801
+[GROUND TRUTH] exit: pid=279800
+[GROUND TRUTH] exit: pid=279799
+[GROUND TRUTH] fork: pid=279802 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279803 ppid=279802 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279804 ppid=279803 comm=check_if_debian
+[GROUND TRUTH] exit: pid=278817
+[GROUND TRUTH] exit: pid=278787
+[GROUND TRUTH] exit: pid=278804
+[GROUND TRUTH] exit: pid=278815
+[GROUND TRUTH] exit: pid=278811
+[GROUND TRUTH] exit: pid=278805
+[GROUND TRUTH] exit: pid=278810
+[GROUND TRUTH] exit: pid=279804
+[GROUND TRUTH] exit: pid=279803
+[GROUND TRUTH] exit: pid=279802
+[GROUND TRUTH] fork: pid=279805 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279806 ppid=279805 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279807 ppid=279806 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279807
+[GROUND TRUTH] exit: pid=279806
+[GROUND TRUTH] exit: pid=279805
+[GROUND TRUTH] fork: pid=279808 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279809 ppid=279808 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279810 ppid=279809 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279810
+[GROUND TRUTH] exit: pid=279809
+[GROUND TRUTH] exit: pid=279808
+[GROUND TRUTH] fork: pid=279811 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279812 ppid=279811 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279813 ppid=279812 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279813
+[GROUND TRUTH] exit: pid=279812
+[GROUND TRUTH] exit: pid=279811
+[GROUND TRUTH] fork: pid=279814 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279815 ppid=279814 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279816 ppid=279815 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279816
+[GROUND TRUTH] exit: pid=279815
+[GROUND TRUTH] exit: pid=279814
+[GROUND TRUTH] fork: pid=279817 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279818 ppid=279817 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279819 ppid=279818 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279819
+[GROUND TRUTH] exit: pid=279818
+[GROUND TRUTH] exit: pid=279817
+[GROUND TRUTH] fork: pid=279820 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279821 ppid=279820 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279822 ppid=279821 comm=check_if_debian
+[GROUND TRUTH] exit: pid=279822
+[GROUND TRUTH] exit: pid=279821
+[GROUND TRUTH] exit: pid=279820
+[GROUND TRUTH] fork: pid=279823 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279823
+[GROUND TRUTH] fork: pid=279824 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279824
+[GROUND TRUTH] fork: pid=279825 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279825
+[GROUND TRUTH] fork: pid=279826 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279826
+[GROUND TRUTH] fork: pid=279827 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279827
+[GROUND TRUTH] fork: pid=279828 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279829 ppid=279828 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279830 ppid=279828 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279829
+[GROUND TRUTH] exit: pid=279830
+[GROUND TRUTH] exit: pid=279828
+[GROUND TRUTH] fork: pid=279831 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279831
+[GROUND TRUTH] fork: pid=279832 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279833 ppid=279832 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279834 ppid=279832 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279834
+[GROUND TRUTH] exit: pid=279833
+[GROUND TRUTH] exit: pid=279832
+[GROUND TRUTH] fork: pid=279835 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279836 ppid=279835 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279837 ppid=279835 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279837
+[GROUND TRUTH] exit: pid=279836
+[GROUND TRUTH] exit: pid=279835
+[GROUND TRUTH] fork: pid=279838 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279839 ppid=279838 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279840 ppid=279838 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279839
+[GROUND TRUTH] exit: pid=279840
+[GROUND TRUTH] exit: pid=279838
+[GROUND TRUTH] fork: pid=279841 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279842 ppid=279841 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279843 ppid=279841 comm=chkrootkit
+[GROUND TRUTH] exit: pid=272931
+[GROUND TRUTH] fork: pid=279844 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=279844
+[GROUND TRUTH] fork: pid=279845 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279846 ppid=1 comm=systemd
+[GROUND TRUTH] exit: pid=279846
+[GROUND TRUTH] fork: pid=279847 ppid=1 comm=systemd
+[GROUND TRUTH] exit: pid=279847
+[GROUND TRUTH] fork: pid=279848 ppid=1 comm=systemd
+[GROUND TRUTH] exit: pid=279848
+[GROUND TRUTH] fork: pid=279849 ppid=1 comm=systemd
+[GROUND TRUTH] exit: pid=279849
+[GROUND TRUTH] fork: pid=279850 ppid=2 comm=kthreadd
+[GROUND TRUTH] fork: pid=279851 ppid=256133 comm=tokio-rt-worker
+[GROUND TRUTH] fork: pid=279852 ppid=2981 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279853 ppid=1201 comm=polkitd
+[GROUND TRUTH] exit: pid=279853
+[GROUND TRUTH] fork: pid=279854 ppid=1201 comm=polkitd
+[GROUND TRUTH] exit: pid=279854
+[GROUND TRUTH] exit: pid=279851
+[GROUND TRUTH] fork: pid=279855 ppid=492 comm=systemd-journal
+[GROUND TRUTH] fork: pid=279856 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279857 ppid=2 comm=kthreadd
+[GROUND TRUTH] exit: pid=279842
+[GROUND TRUTH] exit: pid=279843
+[GROUND TRUTH] exit: pid=279841
+[GROUND TRUTH] fork: pid=279858 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279859 ppid=279858 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279860 ppid=279858 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279860
+[GROUND TRUTH] exit: pid=279859
+[GROUND TRUTH] exit: pid=279858
+[GROUND TRUTH] fork: pid=279861 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279862 ppid=279861 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279863 ppid=279861 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279862
+[GROUND TRUTH] exit: pid=279863
+[GROUND TRUTH] exit: pid=279861
+[GROUND TRUTH] fork: pid=279864 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279864
+[GROUND TRUTH] fork: pid=279865 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279866 ppid=279865 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279867 ppid=279865 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279852
+[GROUND TRUTH] fork: pid=279868 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279868
+[GROUND TRUTH] fork: pid=279869 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279869
+[GROUND TRUTH] exit: pid=279855
+[GROUND TRUTH] fork: pid=279870 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279870
+[GROUND TRUTH] fork: pid=279871 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279871
+[GROUND TRUTH] fork: pid=279872 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279872
+[GROUND TRUTH] fork: pid=279873 ppid=255947 comm=code
+[GROUND TRUTH] fork: pid=279874 ppid=279873 comm=rg
+[GROUND TRUTH] fork: pid=279875 ppid=279873 comm=rg
+[GROUND TRUTH] fork: pid=279876 ppid=279873 comm=rg
+[GROUND TRUTH] exit: pid=279875
+[GROUND TRUTH] exit: pid=279876
+[GROUND TRUTH] exit: pid=279874
+[GROUND TRUTH] exit: pid=279873
+[GROUND TRUTH] fork: pid=279877 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279877
+[GROUND TRUTH] fork: pid=279878 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279878
+[GROUND TRUTH] fork: pid=279879 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279879
+[GROUND TRUTH] fork: pid=279880 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279880
+[GROUND TRUTH] fork: pid=279881 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279881
+[GROUND TRUTH] fork: pid=279882 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279856
+[GROUND TRUTH] fork: pid=279883 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=269230
+[GROUND TRUTH] exit: pid=269231
+[GROUND TRUTH] exit: pid=278730
+[GROUND TRUTH] exit: pid=278908
+[GROUND TRUTH] exit: pid=278907
+[GROUND TRUTH] exit: pid=254850
+[GROUND TRUTH] exit: pid=278729
+[GROUND TRUTH] exit: pid=269228
+[GROUND TRUTH] exit: pid=269229
+[GROUND TRUTH] exit: pid=269232
+[GROUND TRUTH] exit: pid=278731
+[GROUND TRUTH] exit: pid=278911
+[GROUND TRUTH] exit: pid=278910
+[GROUND TRUTH] exit: pid=271267
+[GROUND TRUTH] exit: pid=278808
+[GROUND TRUTH] exit: pid=278801
+[GROUND TRUTH] exit: pid=278813
+[GROUND TRUTH] exit: pid=278802
+[GROUND TRUTH] exit: pid=278812
+[GROUND TRUTH] exit: pid=278809
+[GROUND TRUTH] exit: pid=278803
+[GROUND TRUTH] exit: pid=279882
+[GROUND TRUTH] fork: pid=279884 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=279884
+[GROUND TRUTH] exit: pid=279883
+[GROUND TRUTH] exit: pid=279867
+[GROUND TRUTH] exit: pid=279866
+[GROUND TRUTH] exit: pid=279865
+[GROUND TRUTH] fork: pid=279885 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279885
+[GROUND TRUTH] fork: pid=279886 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279887 ppid=279886 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279888 ppid=279886 comm=chkrootkit
+[GROUND TRUTH] exit: pid=252123
+[GROUND TRUTH] fork: pid=279889 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] exit: pid=279845
+[GROUND TRUTH] fork: pid=279890 ppid=279889 comm=pool-299
+[GROUND TRUTH] fork: pid=279891 ppid=279889 comm=pool-299
+[GROUND TRUTH] fork: pid=279892 ppid=279889 comm=pool-299
+[GROUND TRUTH] fork: pid=279893 ppid=279892 comm=gly-hdl-loader
+[GROUND TRUTH] exit: pid=279891
+[GROUND TRUTH] fork: pid=279894 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279895 ppid=279889 comm=pool-299
+[GROUND TRUTH] fork: pid=279896 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] fork: pid=279897 ppid=279895 comm=blocking-36
+[GROUND TRUTH] fork: pid=279898 ppid=279897 comm=blocking-37
+[GROUND TRUTH] fork: pid=279899 ppid=279893 comm=bwrap
+[GROUND TRUTH] exit: pid=279895
+[GROUND TRUTH] fork: pid=279900 ppid=279899 comm=bwrap
+[GROUND TRUTH] fork: pid=279901 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=279887
+[GROUND TRUTH] exit: pid=279888
+[GROUND TRUTH] exit: pid=279886
+[GROUND TRUTH] fork: pid=279902 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279902
+[GROUND TRUTH] fork: pid=279903 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279904 ppid=279903 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279905 ppid=279903 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279904
+[GROUND TRUTH] exit: pid=279905
+[GROUND TRUTH] exit: pid=279903
+[GROUND TRUTH] fork: pid=279906 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279907 ppid=279906 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279908 ppid=279906 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279907
+[GROUND TRUTH] exit: pid=279908
+[GROUND TRUTH] exit: pid=279906
+[GROUND TRUTH] fork: pid=279909 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279910 ppid=279909 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279911 ppid=279909 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279911
+[GROUND TRUTH] exit: pid=279910
+[GROUND TRUTH] exit: pid=279909
+[GROUND TRUTH] fork: pid=279912 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279912
+[GROUND TRUTH] fork: pid=279913 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279914 ppid=279913 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279915 ppid=279913 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279915
+[GROUND TRUTH] exit: pid=279914
+[GROUND TRUTH] exit: pid=279913
+[GROUND TRUTH] fork: pid=279916 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279916
+[GROUND TRUTH] fork: pid=279917 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279918 ppid=279917 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279919 ppid=279917 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279919
+[GROUND TRUTH] exit: pid=279918
+[GROUND TRUTH] exit: pid=279917
+[GROUND TRUTH] fork: pid=279920 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279920
+[GROUND TRUTH] fork: pid=279921 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279922 ppid=279921 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279923 ppid=279921 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279922
+[GROUND TRUTH] exit: pid=279923
+[GROUND TRUTH] exit: pid=279921
+[GROUND TRUTH] fork: pid=279924 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279924
+[GROUND TRUTH] fork: pid=279925 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279926 ppid=279900 comm=glycin-svg
+[GROUND TRUTH] exit: pid=279925
+[GROUND TRUTH] fork: pid=279927 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279928 ppid=279927 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279929 ppid=279927 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279930 ppid=279900 comm=glycin-svg
+[GROUND TRUTH] exit: pid=279928
+[GROUND TRUTH] exit: pid=279929
+[GROUND TRUTH] exit: pid=279927
+[GROUND TRUTH] fork: pid=279931 ppid=279894 comm=pool-300
+[GROUND TRUTH] fork: pid=279932 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279932
+[GROUND TRUTH] fork: pid=279933 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279934 ppid=279933 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279935 ppid=279933 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279936 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] fork: pid=279937 ppid=279931 comm=gly-hdl-loader
+[GROUND TRUTH] fork: pid=279938 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] exit: pid=279898
+[GROUND TRUTH] exit: pid=279890
+[GROUND TRUTH] exit: pid=279935
+[GROUND TRUTH] exit: pid=279934
+[GROUND TRUTH] exit: pid=279933
+[GROUND TRUTH] fork: pid=279939 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279940 ppid=279894 comm=pool-300
+[GROUND TRUTH] exit: pid=279939
+[GROUND TRUTH] fork: pid=279941 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279942 ppid=279941 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279943 ppid=279941 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279944 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] exit: pid=279942
+[GROUND TRUTH] exit: pid=279943
+[GROUND TRUTH] exit: pid=279941
+[GROUND TRUTH] fork: pid=279945 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279946 ppid=279889 comm=pool-299
+[GROUND TRUTH] fork: pid=279947 ppid=279940 comm=blocking-39
+[GROUND TRUTH] fork: pid=279948 ppid=279946 comm=blocking-40
+[GROUND TRUTH] fork: pid=279949 ppid=279940 comm=blocking-39
+[GROUND TRUTH] fork: pid=279950 ppid=279946 comm=blocking-40
+[GROUND TRUTH] exit: pid=279950
+[GROUND TRUTH] exit: pid=279947
+[GROUND TRUTH] exit: pid=279945
+[GROUND TRUTH] exit: pid=279949
+[GROUND TRUTH] fork: pid=279951 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279948
+[GROUND TRUTH] exit: pid=279938
+[GROUND TRUTH] exit: pid=279936
+[GROUND TRUTH] exit: pid=279951
+[GROUND TRUTH] fork: pid=279952 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279953 ppid=279937 comm=bwrap
+[GROUND TRUTH] fork: pid=279954 ppid=279952 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279955 ppid=279952 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279956 ppid=279953 comm=bwrap
+[GROUND TRUTH] fork: pid=279957 ppid=279956 comm=glycin-image-rs
+[GROUND TRUTH] fork: pid=279958 ppid=279956 comm=glycin-image-rs
+[GROUND TRUTH] fork: pid=279959 ppid=279958 comm=zbus::Connectio
+[GROUND TRUTH] exit: pid=279944
+[GROUND TRUTH] fork: pid=279960 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] fork: pid=279961 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] fork: pid=279962 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] fork: pid=279963 ppid=279962 comm=blocking-2
+[GROUND TRUTH] fork: pid=279964 ppid=279897 comm=blocking-37
+[GROUND TRUTH] fork: pid=279965 ppid=279897 comm=blocking-37
+[GROUND TRUTH] exit: pid=279965
+[GROUND TRUTH] fork: pid=279966 ppid=279897 comm=blocking-37
+[GROUND TRUTH] fork: pid=279967 ppid=279897 comm=blocking-37
+[GROUND TRUTH] exit: pid=279967
+[GROUND TRUTH] exit: pid=279966
+[GROUND TRUTH] exit: pid=279964
+[GROUND TRUTH] exit: pid=279961
+[GROUND TRUTH] exit: pid=279960
+[GROUND TRUTH] exit: pid=279955
+[GROUND TRUTH] exit: pid=279954
+[GROUND TRUTH] exit: pid=279952
+[GROUND TRUTH] fork: pid=279968 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279969 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] fork: pid=279970 ppid=279930 comm=zbus::Connectio
+[GROUND TRUTH] fork: pid=279971 ppid=279946 comm=blocking-40
+[GROUND TRUTH] fork: pid=279972 ppid=279946 comm=blocking-40
+[GROUND TRUTH] fork: pid=279973 ppid=279940 comm=blocking-39
+[GROUND TRUTH] fork: pid=279974 ppid=279940 comm=blocking-39
+[GROUND TRUTH] exit: pid=279972
+[GROUND TRUTH] exit: pid=279973
+[GROUND TRUTH] exit: pid=279971
+[GROUND TRUTH] exit: pid=279974
+[GROUND TRUTH] exit: pid=279970
+[GROUND TRUTH] exit: pid=279969
+[GROUND TRUTH] exit: pid=279968
+[GROUND TRUTH] fork: pid=279975 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279975
+[GROUND TRUTH] fork: pid=279976 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279976
+[GROUND TRUTH] fork: pid=279977 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279978 ppid=279977 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279979 ppid=279977 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279959
+[GROUND TRUTH] exit: pid=279897
+[GROUND TRUTH] exit: pid=279962
+[GROUND TRUTH] exit: pid=279963
+[GROUND TRUTH] exit: pid=279946
+[GROUND TRUTH] exit: pid=279940
+[GROUND TRUTH] exit: pid=279978
+[GROUND TRUTH] exit: pid=279979
+[GROUND TRUTH] exit: pid=279977
+[GROUND TRUTH] fork: pid=279980 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279980
+[GROUND TRUTH] fork: pid=279981 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279981
+[GROUND TRUTH] fork: pid=279982 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279982
+[GROUND TRUTH] fork: pid=279983 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279983
+[GROUND TRUTH] fork: pid=279984 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279984
+[GROUND TRUTH] fork: pid=279985 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279985
+[GROUND TRUTH] fork: pid=279986 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279986
+[GROUND TRUTH] fork: pid=279987 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279987
+[GROUND TRUTH] fork: pid=279988 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279901
+[GROUND TRUTH] exit: pid=279988
+[GROUND TRUTH] fork: pid=279989 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279989
+[GROUND TRUTH] fork: pid=279990 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279990
+[GROUND TRUTH] fork: pid=279991 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279992 ppid=279991 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279993 ppid=279991 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279992
+[GROUND TRUTH] exit: pid=279993
+[GROUND TRUTH] exit: pid=279991
+[GROUND TRUTH] fork: pid=279994 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279994
+[GROUND TRUTH] fork: pid=279995 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279995
+[GROUND TRUTH] fork: pid=279996 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279997 ppid=279996 comm=chkrootkit
+[GROUND TRUTH] fork: pid=279998 ppid=279996 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279997
+[GROUND TRUTH] exit: pid=279998
+[GROUND TRUTH] exit: pid=279996
+[GROUND TRUTH] fork: pid=279999 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279999
+[GROUND TRUTH] fork: pid=280000 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280000
+[GROUND TRUTH] fork: pid=280001 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280001
+[GROUND TRUTH] fork: pid=280002 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280003 ppid=280002 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280004 ppid=280002 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280004
+[GROUND TRUTH] exit: pid=280003
+[GROUND TRUTH] exit: pid=280002
+[GROUND TRUTH] fork: pid=280005 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280005
+[GROUND TRUTH] fork: pid=280006 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280007 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280006
+[GROUND TRUTH] exit: pid=280007
+[GROUND TRUTH] fork: pid=280008 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280008
+[GROUND TRUTH] fork: pid=280009 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280010 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280009
+[GROUND TRUTH] exit: pid=280010
+[GROUND TRUTH] fork: pid=280011 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280011
+[GROUND TRUTH] fork: pid=280012 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280013 ppid=280012 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280014 ppid=280012 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280013
+[GROUND TRUTH] exit: pid=280014
+[GROUND TRUTH] exit: pid=280012
+[GROUND TRUTH] fork: pid=280015 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280015
+[GROUND TRUTH] fork: pid=280016 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280016
+[GROUND TRUTH] fork: pid=280017 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280018 ppid=280017 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280019 ppid=280017 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280018
+[GROUND TRUTH] exit: pid=280019
+[GROUND TRUTH] exit: pid=280017
+[GROUND TRUTH] fork: pid=280020 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280020
+[GROUND TRUTH] fork: pid=280021 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280021
+[GROUND TRUTH] fork: pid=280022 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280023 ppid=280022 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280024 ppid=280022 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280024
+[GROUND TRUTH] exit: pid=280023
+[GROUND TRUTH] exit: pid=280022
+[GROUND TRUTH] fork: pid=280025 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280025
+[GROUND TRUTH] fork: pid=280026 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280027 ppid=280026 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280028 ppid=280026 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280028
+[GROUND TRUTH] exit: pid=280027
+[GROUND TRUTH] exit: pid=280026
+[GROUND TRUTH] fork: pid=280029 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280029
+[GROUND TRUTH] fork: pid=280030 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280031 ppid=280030 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280032 ppid=280030 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280031
+[GROUND TRUTH] exit: pid=280032
+[GROUND TRUTH] exit: pid=280030
+[GROUND TRUTH] fork: pid=280033 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280033
+[GROUND TRUTH] fork: pid=280034 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280034
+[GROUND TRUTH] fork: pid=280035 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280035
+[GROUND TRUTH] fork: pid=280036 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280037 ppid=280036 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280038 ppid=280036 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280037
+[GROUND TRUTH] exit: pid=280038
+[GROUND TRUTH] exit: pid=280036
+[GROUND TRUTH] fork: pid=280039 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280039
+[GROUND TRUTH] fork: pid=280040 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280041 ppid=280040 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280042 ppid=280040 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280042
+[GROUND TRUTH] exit: pid=280041
+[GROUND TRUTH] exit: pid=280040
+[GROUND TRUTH] fork: pid=280043 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280043
+[GROUND TRUTH] fork: pid=280044 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280044
+[GROUND TRUTH] fork: pid=280045 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280045
+[GROUND TRUTH] fork: pid=280046 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280046
+[GROUND TRUTH] fork: pid=280047 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280048 ppid=280047 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280049 ppid=280047 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280048
+[GROUND TRUTH] exit: pid=280049
+[GROUND TRUTH] exit: pid=280047
+[GROUND TRUTH] fork: pid=280050 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280050
+[GROUND TRUTH] fork: pid=280051 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280051
+[GROUND TRUTH] fork: pid=280052 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280052
+[GROUND TRUTH] fork: pid=280053 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280053
+[GROUND TRUTH] fork: pid=280054 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280054
+[GROUND TRUTH] fork: pid=280055 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279889
+[GROUND TRUTH] exit: pid=279896
+[GROUND TRUTH] exit: pid=280055
+[GROUND TRUTH] fork: pid=280056 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279894
+[GROUND TRUTH] exit: pid=280056
+[GROUND TRUTH] fork: pid=280057 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280057
+[GROUND TRUTH] fork: pid=280058 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280058
+[GROUND TRUTH] fork: pid=280059 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280059
+[GROUND TRUTH] fork: pid=280060 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280060
+[GROUND TRUTH] fork: pid=280061 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280061
+[GROUND TRUTH] fork: pid=280062 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280062
+[GROUND TRUTH] fork: pid=280063 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280064 ppid=280063 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280065 ppid=280063 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280064
+[GROUND TRUTH] fork: pid=280066 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280067 ppid=280066 comm=check_php
+[GROUND TRUTH] fork: pid=280068 ppid=280066 comm=check_php
+[GROUND TRUTH] exit: pid=280067
+[GROUND TRUTH] exit: pid=280068
+[GROUND TRUTH] exit: pid=280066
+[GROUND TRUTH] fork: pid=280069 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280070 ppid=280069 comm=check_php
+[GROUND TRUTH] fork: pid=280071 ppid=280069 comm=check_php
+[GROUND TRUTH] exit: pid=280070
+[GROUND TRUTH] exit: pid=280071
+[GROUND TRUTH] exit: pid=280069
+[GROUND TRUTH] fork: pid=280072 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280073 ppid=280072 comm=check_php
+[GROUND TRUTH] fork: pid=280074 ppid=280072 comm=check_php
+[GROUND TRUTH] exit: pid=280073
+[GROUND TRUTH] exit: pid=280074
+[GROUND TRUTH] exit: pid=280072
+[GROUND TRUTH] fork: pid=280075 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280076 ppid=280075 comm=check_php
+[GROUND TRUTH] fork: pid=280077 ppid=280075 comm=check_php
+[GROUND TRUTH] exit: pid=280076
+[GROUND TRUTH] exit: pid=280077
+[GROUND TRUTH] exit: pid=280075
+[GROUND TRUTH] fork: pid=280078 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280079 ppid=280078 comm=check_php
+[GROUND TRUTH] fork: pid=280080 ppid=280078 comm=check_php
+[GROUND TRUTH] exit: pid=280079
+[GROUND TRUTH] exit: pid=280080
+[GROUND TRUTH] exit: pid=280078
+[GROUND TRUTH] fork: pid=280081 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280082 ppid=280081 comm=check_php
+[GROUND TRUTH] fork: pid=280083 ppid=280081 comm=check_php
+[GROUND TRUTH] exit: pid=280082
+[GROUND TRUTH] exit: pid=280083
+[GROUND TRUTH] exit: pid=280081
+[GROUND TRUTH] fork: pid=280084 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280085 ppid=280084 comm=check_php
+[GROUND TRUTH] fork: pid=280086 ppid=280084 comm=check_php
+[GROUND TRUTH] exit: pid=280085
+[GROUND TRUTH] exit: pid=280086
+[GROUND TRUTH] exit: pid=280084
+[GROUND TRUTH] fork: pid=280087 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280088 ppid=280087 comm=check_php
+[GROUND TRUTH] fork: pid=280089 ppid=280087 comm=check_php
+[GROUND TRUTH] exit: pid=280088
+[GROUND TRUTH] exit: pid=280089
+[GROUND TRUTH] exit: pid=280087
+[GROUND TRUTH] fork: pid=280090 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280091 ppid=280090 comm=check_php
+[GROUND TRUTH] fork: pid=280092 ppid=280090 comm=check_php
+[GROUND TRUTH] exit: pid=280091
+[GROUND TRUTH] exit: pid=280092
+[GROUND TRUTH] exit: pid=280090
+[GROUND TRUTH] fork: pid=280093 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280094 ppid=280093 comm=check_php
+[GROUND TRUTH] fork: pid=280095 ppid=280093 comm=check_php
+[GROUND TRUTH] exit: pid=280094
+[GROUND TRUTH] exit: pid=280095
+[GROUND TRUTH] exit: pid=280093
+[GROUND TRUTH] fork: pid=280096 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280097 ppid=280096 comm=check_php
+[GROUND TRUTH] fork: pid=280098 ppid=280096 comm=check_php
+[GROUND TRUTH] exit: pid=280097
+[GROUND TRUTH] exit: pid=280098
+[GROUND TRUTH] exit: pid=280096
+[GROUND TRUTH] fork: pid=280099 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280100 ppid=280099 comm=check_php
+[GROUND TRUTH] fork: pid=280101 ppid=280099 comm=check_php
+[GROUND TRUTH] exit: pid=280100
+[GROUND TRUTH] exit: pid=280101
+[GROUND TRUTH] exit: pid=280099
+[GROUND TRUTH] fork: pid=280102 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280103 ppid=280102 comm=check_php
+[GROUND TRUTH] fork: pid=280104 ppid=280102 comm=check_php
+[GROUND TRUTH] exit: pid=280103
+[GROUND TRUTH] exit: pid=280104
+[GROUND TRUTH] exit: pid=280102
+[GROUND TRUTH] fork: pid=280105 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280106 ppid=280105 comm=check_php
+[GROUND TRUTH] fork: pid=280107 ppid=280105 comm=check_php
+[GROUND TRUTH] exit: pid=280106
+[GROUND TRUTH] exit: pid=280107
+[GROUND TRUTH] exit: pid=280105
+[GROUND TRUTH] fork: pid=280108 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280109 ppid=280108 comm=check_php
+[GROUND TRUTH] fork: pid=280110 ppid=280108 comm=check_php
+[GROUND TRUTH] exit: pid=280109
+[GROUND TRUTH] exit: pid=280110
+[GROUND TRUTH] exit: pid=280108
+[GROUND TRUTH] fork: pid=280111 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280112 ppid=280111 comm=check_php
+[GROUND TRUTH] fork: pid=280113 ppid=280111 comm=check_php
+[GROUND TRUTH] exit: pid=280112
+[GROUND TRUTH] exit: pid=280113
+[GROUND TRUTH] exit: pid=280111
+[GROUND TRUTH] fork: pid=280114 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280115 ppid=280114 comm=check_php
+[GROUND TRUTH] fork: pid=280116 ppid=280114 comm=check_php
+[GROUND TRUTH] exit: pid=280115
+[GROUND TRUTH] exit: pid=280116
+[GROUND TRUTH] exit: pid=280114
+[GROUND TRUTH] fork: pid=280117 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280118 ppid=280117 comm=check_php
+[GROUND TRUTH] fork: pid=280119 ppid=280117 comm=check_php
+[GROUND TRUTH] exit: pid=280118
+[GROUND TRUTH] exit: pid=280119
+[GROUND TRUTH] exit: pid=280117
+[GROUND TRUTH] fork: pid=280120 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280121 ppid=280120 comm=check_php
+[GROUND TRUTH] fork: pid=280122 ppid=280120 comm=check_php
+[GROUND TRUTH] exit: pid=280121
+[GROUND TRUTH] exit: pid=280122
+[GROUND TRUTH] exit: pid=280120
+[GROUND TRUTH] fork: pid=280123 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280124 ppid=280123 comm=check_php
+[GROUND TRUTH] fork: pid=280125 ppid=280123 comm=check_php
+[GROUND TRUTH] exit: pid=280124
+[GROUND TRUTH] exit: pid=280125
+[GROUND TRUTH] exit: pid=280123
+[GROUND TRUTH] fork: pid=280126 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280127 ppid=280126 comm=check_php
+[GROUND TRUTH] fork: pid=280128 ppid=280126 comm=check_php
+[GROUND TRUTH] exit: pid=280127
+[GROUND TRUTH] exit: pid=280128
+[GROUND TRUTH] exit: pid=280126
+[GROUND TRUTH] fork: pid=280129 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280130 ppid=280129 comm=check_php
+[GROUND TRUTH] fork: pid=280131 ppid=280129 comm=check_php
+[GROUND TRUTH] exit: pid=280130
+[GROUND TRUTH] exit: pid=280131
+[GROUND TRUTH] exit: pid=280129
+[GROUND TRUTH] fork: pid=280132 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280133 ppid=280132 comm=check_php
+[GROUND TRUTH] fork: pid=280134 ppid=280132 comm=check_php
+[GROUND TRUTH] exit: pid=280133
+[GROUND TRUTH] exit: pid=280134
+[GROUND TRUTH] exit: pid=280132
+[GROUND TRUTH] fork: pid=280135 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280136 ppid=280135 comm=check_php
+[GROUND TRUTH] fork: pid=280137 ppid=280135 comm=check_php
+[GROUND TRUTH] exit: pid=280136
+[GROUND TRUTH] exit: pid=280137
+[GROUND TRUTH] exit: pid=280135
+[GROUND TRUTH] fork: pid=280138 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280139 ppid=280138 comm=check_php
+[GROUND TRUTH] fork: pid=280140 ppid=280138 comm=check_php
+[GROUND TRUTH] exit: pid=280139
+[GROUND TRUTH] exit: pid=280140
+[GROUND TRUTH] exit: pid=280138
+[GROUND TRUTH] fork: pid=280141 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280142 ppid=280141 comm=check_php
+[GROUND TRUTH] fork: pid=280143 ppid=280141 comm=check_php
+[GROUND TRUTH] exit: pid=280142
+[GROUND TRUTH] exit: pid=280143
+[GROUND TRUTH] exit: pid=280141
+[GROUND TRUTH] fork: pid=280144 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280145 ppid=280144 comm=check_php
+[GROUND TRUTH] fork: pid=280146 ppid=280144 comm=check_php
+[GROUND TRUTH] exit: pid=280145
+[GROUND TRUTH] exit: pid=280146
+[GROUND TRUTH] exit: pid=280144
+[GROUND TRUTH] fork: pid=280147 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280148 ppid=280147 comm=check_php
+[GROUND TRUTH] fork: pid=280149 ppid=280147 comm=check_php
+[GROUND TRUTH] exit: pid=280148
+[GROUND TRUTH] exit: pid=280149
+[GROUND TRUTH] exit: pid=280147
+[GROUND TRUTH] fork: pid=280150 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280151 ppid=280150 comm=check_php
+[GROUND TRUTH] fork: pid=280152 ppid=280150 comm=check_php
+[GROUND TRUTH] exit: pid=280151
+[GROUND TRUTH] exit: pid=280152
+[GROUND TRUTH] exit: pid=280150
+[GROUND TRUTH] fork: pid=280153 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280154 ppid=280153 comm=check_php
+[GROUND TRUTH] fork: pid=280155 ppid=280153 comm=check_php
+[GROUND TRUTH] exit: pid=280154
+[GROUND TRUTH] exit: pid=280155
+[GROUND TRUTH] exit: pid=280153
+[GROUND TRUTH] fork: pid=280156 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280157 ppid=280156 comm=check_php
+[GROUND TRUTH] fork: pid=280158 ppid=280156 comm=check_php
+[GROUND TRUTH] exit: pid=280157
+[GROUND TRUTH] exit: pid=280158
+[GROUND TRUTH] exit: pid=280156
+[GROUND TRUTH] fork: pid=280159 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280160 ppid=280159 comm=check_php
+[GROUND TRUTH] fork: pid=280161 ppid=280159 comm=check_php
+[GROUND TRUTH] exit: pid=280160
+[GROUND TRUTH] exit: pid=280161
+[GROUND TRUTH] exit: pid=280159
+[GROUND TRUTH] fork: pid=280162 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280163 ppid=280162 comm=check_php
+[GROUND TRUTH] fork: pid=280164 ppid=280162 comm=check_php
+[GROUND TRUTH] exit: pid=280163
+[GROUND TRUTH] exit: pid=280164
+[GROUND TRUTH] exit: pid=280162
+[GROUND TRUTH] fork: pid=280165 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280166 ppid=280165 comm=check_php
+[GROUND TRUTH] fork: pid=280167 ppid=280165 comm=check_php
+[GROUND TRUTH] exit: pid=280166
+[GROUND TRUTH] exit: pid=280167
+[GROUND TRUTH] exit: pid=280165
+[GROUND TRUTH] fork: pid=280168 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280169 ppid=280168 comm=check_php
+[GROUND TRUTH] fork: pid=280170 ppid=280168 comm=check_php
+[GROUND TRUTH] exit: pid=280169
+[GROUND TRUTH] exit: pid=280170
+[GROUND TRUTH] exit: pid=280168
+[GROUND TRUTH] fork: pid=280171 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280172 ppid=280171 comm=check_php
+[GROUND TRUTH] fork: pid=280173 ppid=280171 comm=check_php
+[GROUND TRUTH] exit: pid=280172
+[GROUND TRUTH] exit: pid=280173
+[GROUND TRUTH] exit: pid=280171
+[GROUND TRUTH] fork: pid=280174 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280175 ppid=280174 comm=check_php
+[GROUND TRUTH] fork: pid=280176 ppid=280174 comm=check_php
+[GROUND TRUTH] exit: pid=280175
+[GROUND TRUTH] exit: pid=280176
+[GROUND TRUTH] exit: pid=280174
+[GROUND TRUTH] fork: pid=280177 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280178 ppid=280177 comm=check_php
+[GROUND TRUTH] fork: pid=280179 ppid=280177 comm=check_php
+[GROUND TRUTH] exit: pid=280178
+[GROUND TRUTH] exit: pid=280179
+[GROUND TRUTH] exit: pid=280177
+[GROUND TRUTH] fork: pid=280180 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280181 ppid=280180 comm=check_php
+[GROUND TRUTH] fork: pid=280182 ppid=280180 comm=check_php
+[GROUND TRUTH] exit: pid=280181
+[GROUND TRUTH] exit: pid=280182
+[GROUND TRUTH] exit: pid=280180
+[GROUND TRUTH] fork: pid=280183 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280184 ppid=280183 comm=check_php
+[GROUND TRUTH] fork: pid=280185 ppid=280183 comm=check_php
+[GROUND TRUTH] exit: pid=280184
+[GROUND TRUTH] exit: pid=280185
+[GROUND TRUTH] exit: pid=280183
+[GROUND TRUTH] fork: pid=280186 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280187 ppid=280186 comm=check_php
+[GROUND TRUTH] fork: pid=280188 ppid=280186 comm=check_php
+[GROUND TRUTH] exit: pid=280187
+[GROUND TRUTH] exit: pid=280188
+[GROUND TRUTH] exit: pid=280186
+[GROUND TRUTH] fork: pid=280189 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280190 ppid=280189 comm=check_php
+[GROUND TRUTH] fork: pid=280191 ppid=280189 comm=check_php
+[GROUND TRUTH] exit: pid=280190
+[GROUND TRUTH] exit: pid=280191
+[GROUND TRUTH] exit: pid=280189
+[GROUND TRUTH] fork: pid=280192 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280193 ppid=280192 comm=check_php
+[GROUND TRUTH] fork: pid=280194 ppid=280192 comm=check_php
+[GROUND TRUTH] exit: pid=280193
+[GROUND TRUTH] exit: pid=280194
+[GROUND TRUTH] exit: pid=280192
+[GROUND TRUTH] fork: pid=280195 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280196 ppid=280195 comm=check_php
+[GROUND TRUTH] fork: pid=280197 ppid=280195 comm=check_php
+[GROUND TRUTH] exit: pid=280196
+[GROUND TRUTH] exit: pid=280197
+[GROUND TRUTH] exit: pid=280195
+[GROUND TRUTH] fork: pid=280198 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280199 ppid=280198 comm=check_php
+[GROUND TRUTH] fork: pid=280200 ppid=280198 comm=check_php
+[GROUND TRUTH] exit: pid=280199
+[GROUND TRUTH] exit: pid=280200
+[GROUND TRUTH] exit: pid=280198
+[GROUND TRUTH] fork: pid=280201 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280202 ppid=280201 comm=check_php
+[GROUND TRUTH] fork: pid=280203 ppid=280201 comm=check_php
+[GROUND TRUTH] exit: pid=280202
+[GROUND TRUTH] exit: pid=280203
+[GROUND TRUTH] exit: pid=280201
+[GROUND TRUTH] fork: pid=280204 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280205 ppid=280204 comm=check_php
+[GROUND TRUTH] fork: pid=280206 ppid=280204 comm=check_php
+[GROUND TRUTH] exit: pid=280205
+[GROUND TRUTH] exit: pid=280206
+[GROUND TRUTH] exit: pid=280204
+[GROUND TRUTH] fork: pid=280207 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280208 ppid=280207 comm=check_php
+[GROUND TRUTH] fork: pid=280209 ppid=280207 comm=check_php
+[GROUND TRUTH] exit: pid=280208
+[GROUND TRUTH] exit: pid=280209
+[GROUND TRUTH] exit: pid=280207
+[GROUND TRUTH] fork: pid=280210 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280211 ppid=280210 comm=check_php
+[GROUND TRUTH] fork: pid=280212 ppid=280210 comm=check_php
+[GROUND TRUTH] exit: pid=280211
+[GROUND TRUTH] exit: pid=280212
+[GROUND TRUTH] exit: pid=280210
+[GROUND TRUTH] fork: pid=280213 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280214 ppid=280213 comm=check_php
+[GROUND TRUTH] fork: pid=280215 ppid=280213 comm=check_php
+[GROUND TRUTH] exit: pid=280214
+[GROUND TRUTH] exit: pid=280215
+[GROUND TRUTH] exit: pid=280213
+[GROUND TRUTH] fork: pid=280216 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280217 ppid=280216 comm=check_php
+[GROUND TRUTH] fork: pid=280218 ppid=280216 comm=check_php
+[GROUND TRUTH] exit: pid=280217
+[GROUND TRUTH] exit: pid=280218
+[GROUND TRUTH] exit: pid=280216
+[GROUND TRUTH] fork: pid=280219 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280220 ppid=280219 comm=check_php
+[GROUND TRUTH] fork: pid=280221 ppid=280219 comm=check_php
+[GROUND TRUTH] exit: pid=280220
+[GROUND TRUTH] exit: pid=280221
+[GROUND TRUTH] exit: pid=280219
+[GROUND TRUTH] fork: pid=280222 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280223 ppid=280222 comm=check_php
+[GROUND TRUTH] fork: pid=280224 ppid=280222 comm=check_php
+[GROUND TRUTH] exit: pid=280223
+[GROUND TRUTH] exit: pid=280224
+[GROUND TRUTH] exit: pid=280222
+[GROUND TRUTH] fork: pid=280225 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280226 ppid=280225 comm=check_php
+[GROUND TRUTH] fork: pid=280227 ppid=280225 comm=check_php
+[GROUND TRUTH] exit: pid=280226
+[GROUND TRUTH] exit: pid=280227
+[GROUND TRUTH] exit: pid=280225
+[GROUND TRUTH] fork: pid=280228 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280229 ppid=280228 comm=check_php
+[GROUND TRUTH] fork: pid=280230 ppid=280228 comm=check_php
+[GROUND TRUTH] exit: pid=280229
+[GROUND TRUTH] exit: pid=280230
+[GROUND TRUTH] exit: pid=280228
+[GROUND TRUTH] fork: pid=280231 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280232 ppid=280231 comm=check_php
+[GROUND TRUTH] fork: pid=280233 ppid=280231 comm=check_php
+[GROUND TRUTH] exit: pid=280232
+[GROUND TRUTH] exit: pid=280233
+[GROUND TRUTH] exit: pid=280231
+[GROUND TRUTH] fork: pid=280234 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280235 ppid=280234 comm=check_php
+[GROUND TRUTH] fork: pid=280236 ppid=280234 comm=check_php
+[GROUND TRUTH] exit: pid=280235
+[GROUND TRUTH] exit: pid=280236
+[GROUND TRUTH] exit: pid=280234
+[GROUND TRUTH] fork: pid=280237 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280238 ppid=280237 comm=check_php
+[GROUND TRUTH] fork: pid=280239 ppid=280237 comm=check_php
+[GROUND TRUTH] exit: pid=280238
+[GROUND TRUTH] exit: pid=280239
+[GROUND TRUTH] exit: pid=280237
+[GROUND TRUTH] fork: pid=280240 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280241 ppid=280240 comm=check_php
+[GROUND TRUTH] fork: pid=280242 ppid=280240 comm=check_php
+[GROUND TRUTH] exit: pid=280241
+[GROUND TRUTH] exit: pid=280242
+[GROUND TRUTH] exit: pid=280240
+[GROUND TRUTH] fork: pid=280243 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280244 ppid=280243 comm=check_php
+[GROUND TRUTH] fork: pid=280245 ppid=280243 comm=check_php
+[GROUND TRUTH] exit: pid=280244
+[GROUND TRUTH] exit: pid=280245
+[GROUND TRUTH] exit: pid=280243
+[GROUND TRUTH] fork: pid=280246 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280247 ppid=280246 comm=check_php
+[GROUND TRUTH] fork: pid=280248 ppid=280246 comm=check_php
+[GROUND TRUTH] exit: pid=280247
+[GROUND TRUTH] exit: pid=280248
+[GROUND TRUTH] exit: pid=280246
+[GROUND TRUTH] fork: pid=280249 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280250 ppid=280249 comm=check_php
+[GROUND TRUTH] fork: pid=280251 ppid=280249 comm=check_php
+[GROUND TRUTH] exit: pid=280250
+[GROUND TRUTH] exit: pid=280251
+[GROUND TRUTH] exit: pid=280249
+[GROUND TRUTH] fork: pid=280252 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280253 ppid=280252 comm=check_php
+[GROUND TRUTH] fork: pid=280254 ppid=280252 comm=check_php
+[GROUND TRUTH] exit: pid=280253
+[GROUND TRUTH] exit: pid=280254
+[GROUND TRUTH] exit: pid=280252
+[GROUND TRUTH] fork: pid=280255 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280256 ppid=280255 comm=check_php
+[GROUND TRUTH] fork: pid=280257 ppid=280255 comm=check_php
+[GROUND TRUTH] exit: pid=280256
+[GROUND TRUTH] exit: pid=280257
+[GROUND TRUTH] exit: pid=280255
+[GROUND TRUTH] fork: pid=280258 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280259 ppid=280258 comm=check_php
+[GROUND TRUTH] fork: pid=280260 ppid=280258 comm=check_php
+[GROUND TRUTH] exit: pid=280259
+[GROUND TRUTH] exit: pid=280260
+[GROUND TRUTH] exit: pid=280258
+[GROUND TRUTH] fork: pid=280261 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280262 ppid=280261 comm=check_php
+[GROUND TRUTH] fork: pid=280263 ppid=280261 comm=check_php
+[GROUND TRUTH] exit: pid=280262
+[GROUND TRUTH] exit: pid=280263
+[GROUND TRUTH] exit: pid=280261
+[GROUND TRUTH] fork: pid=280264 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280265 ppid=280264 comm=check_php
+[GROUND TRUTH] fork: pid=280266 ppid=280264 comm=check_php
+[GROUND TRUTH] exit: pid=280265
+[GROUND TRUTH] exit: pid=280266
+[GROUND TRUTH] exit: pid=280264
+[GROUND TRUTH] fork: pid=280267 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280268 ppid=280267 comm=check_php
+[GROUND TRUTH] fork: pid=280269 ppid=280267 comm=check_php
+[GROUND TRUTH] exit: pid=280268
+[GROUND TRUTH] exit: pid=280269
+[GROUND TRUTH] exit: pid=280267
+[GROUND TRUTH] fork: pid=280270 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280271 ppid=280270 comm=check_php
+[GROUND TRUTH] fork: pid=280272 ppid=280270 comm=check_php
+[GROUND TRUTH] exit: pid=280271
+[GROUND TRUTH] exit: pid=280272
+[GROUND TRUTH] exit: pid=280270
+[GROUND TRUTH] fork: pid=280273 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280274 ppid=280273 comm=check_php
+[GROUND TRUTH] fork: pid=280275 ppid=280273 comm=check_php
+[GROUND TRUTH] exit: pid=280274
+[GROUND TRUTH] exit: pid=280275
+[GROUND TRUTH] exit: pid=280273
+[GROUND TRUTH] fork: pid=280276 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280277 ppid=280276 comm=check_php
+[GROUND TRUTH] fork: pid=280278 ppid=280276 comm=check_php
+[GROUND TRUTH] exit: pid=280278
+[GROUND TRUTH] exit: pid=280277
+[GROUND TRUTH] exit: pid=280276
+[GROUND TRUTH] fork: pid=280279 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280280 ppid=280279 comm=check_php
+[GROUND TRUTH] fork: pid=280281 ppid=280279 comm=check_php
+[GROUND TRUTH] exit: pid=280280
+[GROUND TRUTH] exit: pid=280281
+[GROUND TRUTH] exit: pid=280279
+[GROUND TRUTH] fork: pid=280282 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280283 ppid=280282 comm=check_php
+[GROUND TRUTH] fork: pid=280284 ppid=280282 comm=check_php
+[GROUND TRUTH] exit: pid=280283
+[GROUND TRUTH] exit: pid=280284
+[GROUND TRUTH] exit: pid=280282
+[GROUND TRUTH] fork: pid=280285 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280286 ppid=280285 comm=check_php
+[GROUND TRUTH] fork: pid=280287 ppid=280285 comm=check_php
+[GROUND TRUTH] exit: pid=280286
+[GROUND TRUTH] exit: pid=280287
+[GROUND TRUTH] exit: pid=280285
+[GROUND TRUTH] fork: pid=280288 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280289 ppid=280288 comm=check_php
+[GROUND TRUTH] fork: pid=280290 ppid=280288 comm=check_php
+[GROUND TRUTH] exit: pid=280289
+[GROUND TRUTH] exit: pid=280290
+[GROUND TRUTH] exit: pid=280288
+[GROUND TRUTH] fork: pid=280291 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280292 ppid=280291 comm=check_php
+[GROUND TRUTH] fork: pid=280293 ppid=280291 comm=check_php
+[GROUND TRUTH] exit: pid=280292
+[GROUND TRUTH] exit: pid=280293
+[GROUND TRUTH] exit: pid=280291
+[GROUND TRUTH] fork: pid=280294 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280295 ppid=280294 comm=check_php
+[GROUND TRUTH] fork: pid=280296 ppid=280294 comm=check_php
+[GROUND TRUTH] exit: pid=280295
+[GROUND TRUTH] exit: pid=280296
+[GROUND TRUTH] exit: pid=280294
+[GROUND TRUTH] fork: pid=280297 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280298 ppid=280297 comm=check_php
+[GROUND TRUTH] fork: pid=280299 ppid=280297 comm=check_php
+[GROUND TRUTH] exit: pid=280298
+[GROUND TRUTH] exit: pid=280299
+[GROUND TRUTH] exit: pid=280297
+[GROUND TRUTH] fork: pid=280300 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280301 ppid=280300 comm=check_php
+[GROUND TRUTH] fork: pid=280302 ppid=280300 comm=check_php
+[GROUND TRUTH] exit: pid=280301
+[GROUND TRUTH] exit: pid=280302
+[GROUND TRUTH] exit: pid=280300
+[GROUND TRUTH] fork: pid=280303 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280304 ppid=280303 comm=check_php
+[GROUND TRUTH] fork: pid=280305 ppid=280303 comm=check_php
+[GROUND TRUTH] exit: pid=280304
+[GROUND TRUTH] exit: pid=280305
+[GROUND TRUTH] exit: pid=280303
+[GROUND TRUTH] fork: pid=280306 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280307 ppid=280306 comm=check_php
+[GROUND TRUTH] fork: pid=280308 ppid=280306 comm=check_php
+[GROUND TRUTH] exit: pid=280307
+[GROUND TRUTH] exit: pid=280308
+[GROUND TRUTH] exit: pid=280306
+[GROUND TRUTH] fork: pid=280309 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280310 ppid=280309 comm=check_php
+[GROUND TRUTH] fork: pid=280311 ppid=280309 comm=check_php
+[GROUND TRUTH] exit: pid=280310
+[GROUND TRUTH] exit: pid=280311
+[GROUND TRUTH] exit: pid=280309
+[GROUND TRUTH] fork: pid=280312 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280313 ppid=280312 comm=check_php
+[GROUND TRUTH] fork: pid=280314 ppid=280312 comm=check_php
+[GROUND TRUTH] exit: pid=280313
+[GROUND TRUTH] exit: pid=280314
+[GROUND TRUTH] exit: pid=280312
+[GROUND TRUTH] fork: pid=280315 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280316 ppid=280315 comm=check_php
+[GROUND TRUTH] fork: pid=280317 ppid=280315 comm=check_php
+[GROUND TRUTH] exit: pid=280316
+[GROUND TRUTH] exit: pid=280317
+[GROUND TRUTH] exit: pid=280315
+[GROUND TRUTH] fork: pid=280318 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280319 ppid=280318 comm=check_php
+[GROUND TRUTH] fork: pid=280320 ppid=280318 comm=check_php
+[GROUND TRUTH] exit: pid=280319
+[GROUND TRUTH] exit: pid=280320
+[GROUND TRUTH] exit: pid=280318
+[GROUND TRUTH] fork: pid=280321 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280322 ppid=280321 comm=check_php
+[GROUND TRUTH] fork: pid=280323 ppid=280321 comm=check_php
+[GROUND TRUTH] exit: pid=280322
+[GROUND TRUTH] exit: pid=280323
+[GROUND TRUTH] exit: pid=280321
+[GROUND TRUTH] fork: pid=280324 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280325 ppid=280324 comm=check_php
+[GROUND TRUTH] fork: pid=280326 ppid=280324 comm=check_php
+[GROUND TRUTH] exit: pid=280325
+[GROUND TRUTH] exit: pid=280326
+[GROUND TRUTH] exit: pid=280324
+[GROUND TRUTH] fork: pid=280327 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280328 ppid=280327 comm=check_php
+[GROUND TRUTH] fork: pid=280329 ppid=280327 comm=check_php
+[GROUND TRUTH] exit: pid=280328
+[GROUND TRUTH] exit: pid=280329
+[GROUND TRUTH] exit: pid=280327
+[GROUND TRUTH] fork: pid=280330 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280331 ppid=280330 comm=check_php
+[GROUND TRUTH] fork: pid=280332 ppid=280330 comm=check_php
+[GROUND TRUTH] exit: pid=280331
+[GROUND TRUTH] exit: pid=280332
+[GROUND TRUTH] exit: pid=280330
+[GROUND TRUTH] fork: pid=280333 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280334 ppid=280333 comm=check_php
+[GROUND TRUTH] fork: pid=280335 ppid=280333 comm=check_php
+[GROUND TRUTH] exit: pid=280334
+[GROUND TRUTH] exit: pid=280335
+[GROUND TRUTH] exit: pid=280333
+[GROUND TRUTH] fork: pid=280336 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280337 ppid=280336 comm=check_php
+[GROUND TRUTH] fork: pid=280338 ppid=280336 comm=check_php
+[GROUND TRUTH] exit: pid=280337
+[GROUND TRUTH] exit: pid=280338
+[GROUND TRUTH] exit: pid=280336
+[GROUND TRUTH] fork: pid=280339 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280340 ppid=280339 comm=check_php
+[GROUND TRUTH] fork: pid=280341 ppid=280339 comm=check_php
+[GROUND TRUTH] exit: pid=280340
+[GROUND TRUTH] exit: pid=280341
+[GROUND TRUTH] exit: pid=280339
+[GROUND TRUTH] fork: pid=280342 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280343 ppid=280342 comm=check_php
+[GROUND TRUTH] fork: pid=280344 ppid=280342 comm=check_php
+[GROUND TRUTH] exit: pid=280343
+[GROUND TRUTH] exit: pid=280344
+[GROUND TRUTH] exit: pid=280342
+[GROUND TRUTH] fork: pid=280345 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280346 ppid=280345 comm=check_php
+[GROUND TRUTH] fork: pid=280347 ppid=280345 comm=check_php
+[GROUND TRUTH] exit: pid=280346
+[GROUND TRUTH] exit: pid=280347
+[GROUND TRUTH] exit: pid=280345
+[GROUND TRUTH] fork: pid=280348 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280349 ppid=280348 comm=check_php
+[GROUND TRUTH] fork: pid=280350 ppid=280348 comm=check_php
+[GROUND TRUTH] exit: pid=280349
+[GROUND TRUTH] exit: pid=280350
+[GROUND TRUTH] exit: pid=280348
+[GROUND TRUTH] fork: pid=280351 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280352 ppid=280351 comm=check_php
+[GROUND TRUTH] fork: pid=280353 ppid=280351 comm=check_php
+[GROUND TRUTH] exit: pid=280352
+[GROUND TRUTH] exit: pid=280353
+[GROUND TRUTH] exit: pid=280351
+[GROUND TRUTH] fork: pid=280354 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280355 ppid=280354 comm=check_php
+[GROUND TRUTH] fork: pid=280356 ppid=280354 comm=check_php
+[GROUND TRUTH] exit: pid=280355
+[GROUND TRUTH] exit: pid=280356
+[GROUND TRUTH] exit: pid=280354
+[GROUND TRUTH] fork: pid=280357 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280358 ppid=280357 comm=check_php
+[GROUND TRUTH] fork: pid=280359 ppid=280357 comm=check_php
+[GROUND TRUTH] exit: pid=280358
+[GROUND TRUTH] exit: pid=280359
+[GROUND TRUTH] exit: pid=280357
+[GROUND TRUTH] fork: pid=280360 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280361 ppid=280360 comm=check_php
+[GROUND TRUTH] fork: pid=280362 ppid=280360 comm=check_php
+[GROUND TRUTH] exit: pid=280361
+[GROUND TRUTH] exit: pid=280362
+[GROUND TRUTH] exit: pid=280360
+[GROUND TRUTH] fork: pid=280363 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280364 ppid=280363 comm=check_php
+[GROUND TRUTH] fork: pid=280365 ppid=280363 comm=check_php
+[GROUND TRUTH] exit: pid=280364
+[GROUND TRUTH] exit: pid=280365
+[GROUND TRUTH] exit: pid=280363
+[GROUND TRUTH] fork: pid=280366 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280367 ppid=280366 comm=check_php
+[GROUND TRUTH] fork: pid=280368 ppid=280366 comm=check_php
+[GROUND TRUTH] exit: pid=280367
+[GROUND TRUTH] exit: pid=280368
+[GROUND TRUTH] exit: pid=280366
+[GROUND TRUTH] fork: pid=280369 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280370 ppid=280369 comm=check_php
+[GROUND TRUTH] fork: pid=280371 ppid=280369 comm=check_php
+[GROUND TRUTH] exit: pid=280370
+[GROUND TRUTH] exit: pid=280371
+[GROUND TRUTH] exit: pid=280369
+[GROUND TRUTH] fork: pid=280372 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280373 ppid=280372 comm=check_php
+[GROUND TRUTH] fork: pid=280374 ppid=280372 comm=check_php
+[GROUND TRUTH] exit: pid=280373
+[GROUND TRUTH] exit: pid=280374
+[GROUND TRUTH] exit: pid=280372
+[GROUND TRUTH] fork: pid=280375 ppid=280065 comm=xargs
+[GROUND TRUTH] fork: pid=280376 ppid=280375 comm=check_php
+[GROUND TRUTH] fork: pid=280377 ppid=280375 comm=check_php
+[GROUND TRUTH] exit: pid=280376
+[GROUND TRUTH] exit: pid=280377
+[GROUND TRUTH] exit: pid=280375
+[GROUND TRUTH] exit: pid=280065
+[GROUND TRUTH] exit: pid=280063
+[GROUND TRUTH] fork: pid=280378 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280378
+[GROUND TRUTH] fork: pid=280379 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280380 ppid=280379 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280381 ppid=280379 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280380
+[GROUND TRUTH] exit: pid=280381
+[GROUND TRUTH] exit: pid=280379
+[GROUND TRUTH] fork: pid=280382 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280382
+[GROUND TRUTH] fork: pid=280383 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280384 ppid=280383 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280385 ppid=280383 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280384
+[GROUND TRUTH] exit: pid=280385
+[GROUND TRUTH] exit: pid=280383
+[GROUND TRUTH] fork: pid=280386 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=279958
+[GROUND TRUTH] exit: pid=279937
+[GROUND TRUTH] exit: pid=279931
+[GROUND TRUTH] exit: pid=279953
+[GROUND TRUTH] exit: pid=279957
+[GROUND TRUTH] exit: pid=279956
+[GROUND TRUTH] exit: pid=279930
+[GROUND TRUTH] exit: pid=279893
+[GROUND TRUTH] exit: pid=279899
+[GROUND TRUTH] exit: pid=279892
+[GROUND TRUTH] exit: pid=279926
+[GROUND TRUTH] exit: pid=279900
+[GROUND TRUTH] exit: pid=280386
+[GROUND TRUTH] fork: pid=280387 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280388 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280387
+[GROUND TRUTH] exit: pid=280388
+[GROUND TRUTH] fork: pid=280389 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280389
+[GROUND TRUTH] fork: pid=280390 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280390
+[GROUND TRUTH] fork: pid=280391 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280391
+[GROUND TRUTH] fork: pid=280392 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280393 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280392
+[GROUND TRUTH] exit: pid=280393
+[GROUND TRUTH] fork: pid=280394 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280394
+[GROUND TRUTH] fork: pid=280395 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280395
+[GROUND TRUTH] fork: pid=280396 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280397 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280396
+[GROUND TRUTH] exit: pid=280397
+[GROUND TRUTH] fork: pid=280398 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280399 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280398
+[GROUND TRUTH] exit: pid=280399
+[GROUND TRUTH] fork: pid=280400 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280401 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280400
+[GROUND TRUTH] exit: pid=280401
+[GROUND TRUTH] fork: pid=280402 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280403 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280402
+[GROUND TRUTH] exit: pid=280403
+[GROUND TRUTH] fork: pid=280404 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280405 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280404
+[GROUND TRUTH] exit: pid=280405
+[GROUND TRUTH] fork: pid=280406 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280407 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280406
+[GROUND TRUTH] exit: pid=280407
+[GROUND TRUTH] fork: pid=280408 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280409 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280408
+[GROUND TRUTH] exit: pid=280409
+[GROUND TRUTH] fork: pid=280410 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280411 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280410
+[GROUND TRUTH] exit: pid=280411
+[GROUND TRUTH] fork: pid=280412 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280413 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280412
+[GROUND TRUTH] exit: pid=280413
+[GROUND TRUTH] fork: pid=280414 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280415 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280414
+[GROUND TRUTH] exit: pid=280415
+[GROUND TRUTH] fork: pid=280416 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280417 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280416
+[GROUND TRUTH] exit: pid=280417
+[GROUND TRUTH] fork: pid=280418 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280419 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280418
+[GROUND TRUTH] exit: pid=280419
+[GROUND TRUTH] fork: pid=280420 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280421 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280420
+[GROUND TRUTH] exit: pid=280421
+[GROUND TRUTH] fork: pid=280422 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280423 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280422
+[GROUND TRUTH] exit: pid=280423
+[GROUND TRUTH] fork: pid=280424 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280425 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280424
+[GROUND TRUTH] exit: pid=280425
+[GROUND TRUTH] fork: pid=280426 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280427 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280426
+[GROUND TRUTH] exit: pid=280427
+[GROUND TRUTH] fork: pid=280428 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280429 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280428
+[GROUND TRUTH] exit: pid=280429
+[GROUND TRUTH] fork: pid=280430 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280431 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280430
+[GROUND TRUTH] exit: pid=280431
+[GROUND TRUTH] fork: pid=280432 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280433 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280432
+[GROUND TRUTH] exit: pid=280433
+[GROUND TRUTH] fork: pid=280434 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280435 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280434
+[GROUND TRUTH] exit: pid=280435
+[GROUND TRUTH] fork: pid=280436 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280437 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280436
+[GROUND TRUTH] exit: pid=280437
+[GROUND TRUTH] fork: pid=280438 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280439 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280438
+[GROUND TRUTH] exit: pid=280439
+[GROUND TRUTH] fork: pid=280440 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280441 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280440
+[GROUND TRUTH] exit: pid=280441
+[GROUND TRUTH] fork: pid=280442 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280443 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280442
+[GROUND TRUTH] exit: pid=280443
+[GROUND TRUTH] fork: pid=280444 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280445 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280444
+[GROUND TRUTH] exit: pid=280445
+[GROUND TRUTH] fork: pid=280446 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280447 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280446
+[GROUND TRUTH] exit: pid=280447
+[GROUND TRUTH] fork: pid=280448 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280449 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280448
+[GROUND TRUTH] exit: pid=280449
+[GROUND TRUTH] fork: pid=280450 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280451 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280450
+[GROUND TRUTH] exit: pid=280451
+[GROUND TRUTH] fork: pid=280452 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280453 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280452
+[GROUND TRUTH] exit: pid=280453
+[GROUND TRUTH] fork: pid=280454 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280455 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280454
+[GROUND TRUTH] exit: pid=280455
+[GROUND TRUTH] fork: pid=280456 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280457 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280456
+[GROUND TRUTH] exit: pid=280457
+[GROUND TRUTH] fork: pid=280458 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280459 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280458
+[GROUND TRUTH] exit: pid=280459
+[GROUND TRUTH] fork: pid=280460 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280461 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280460
+[GROUND TRUTH] exit: pid=280461
+[GROUND TRUTH] fork: pid=280462 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280462
+[GROUND TRUTH] fork: pid=280463 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280463
+[GROUND TRUTH] fork: pid=280464 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280464
+[GROUND TRUTH] fork: pid=280465 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280465
+[GROUND TRUTH] fork: pid=280466 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280466
+[GROUND TRUTH] fork: pid=280467 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280468 ppid=280467 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280469 ppid=280467 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280469
+[GROUND TRUTH] exit: pid=280468
+[GROUND TRUTH] exit: pid=280467
+[GROUND TRUTH] fork: pid=280470 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280471 ppid=280470 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280472 ppid=280470 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280473 ppid=280470 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280474 ppid=280470 comm=chkrootkit
+[GROUND TRUTH] exit: pid=280471
+[GROUND TRUTH] exit: pid=280472
+[GROUND TRUTH] exit: pid=280473
+[GROUND TRUTH] exit: pid=280474
+[GROUND TRUTH] exit: pid=280470
+[GROUND TRUTH] fork: pid=280475 ppid=279323 comm=chkrootkit
+[GROUND TRUTH] fork: pid=280476 ppid=280475 comm=chkproc
+[GROUND TRUTH] fork: pid=280477 ppid=280476 comm=sh
+[GROUND TRUTH] exit: pid=280477
+[GROUND TRUTH] exit: pid=280476
+[GROUND TRUTH] exit: pid=279776
+[GROUND TRUTH] fork: pid=280478 ppid=1201 comm=polkitd
+[GROUND TRUTH] exit: pid=280478
+[GROUND TRUTH] fork: pid=280479 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] fork: pid=280480 ppid=256134 comm=tokio-rt-worker
+[GROUND TRUTH] fork: pid=280481 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280482 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280483 ppid=280481 comm=bash
+[GROUND TRUTH] fork: pid=280484 ppid=280483 comm=lesspipe
+[GROUND TRUTH] exit: pid=280484
+[GROUND TRUTH] fork: pid=280485 ppid=280483 comm=lesspipe
+[GROUND TRUTH] fork: pid=280486 ppid=280485 comm=lesspipe
+[GROUND TRUTH] exit: pid=280486
+[GROUND TRUTH] exit: pid=280485
+[GROUND TRUTH] exit: pid=280483
+[GROUND TRUTH] fork: pid=280487 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280487
+[GROUND TRUTH] fork: pid=280488 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280488
+[GROUND TRUTH] fork: pid=280489 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280489
+[GROUND TRUTH] fork: pid=280490 ppid=280481 comm=bash
+[GROUND TRUTH] fork: pid=280491 ppid=280490 comm=bash
+[GROUND TRUTH] exit: pid=280491
+[GROUND TRUTH] exit: pid=280490
+[GROUND TRUTH] fork: pid=280492 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280492
+[GROUND TRUTH] fork: pid=280493 ppid=280481 comm=bash
+[GROUND TRUTH] fork: pid=280494 ppid=1243 comm=pool-spawner
+[GROUND TRUTH] exit: pid=280493
+[GROUND TRUTH] fork: pid=280495 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280495
+[GROUND TRUTH] fork: pid=280496 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280496
+[GROUND TRUTH] fork: pid=280497 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280497
+[GROUND TRUTH] fork: pid=280498 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280498
+[GROUND TRUTH] fork: pid=280499 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280499
+[GROUND TRUTH] fork: pid=280500 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280500
+[GROUND TRUTH] fork: pid=280501 ppid=280481 comm=bash
+[GROUND TRUTH] fork: pid=280502 ppid=492 comm=systemd-journal
+[GROUND TRUTH] fork: pid=280503 ppid=492 comm=systemd-journal
+[GROUND TRUTH] exit: pid=280503
+[GROUND TRUTH] exit: pid=280502
+[GROUND TRUTH] fork: pid=280504 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280505 ppid=280504 comm=sh
+[GROUND TRUTH] exit: pid=280505
+[GROUND TRUTH] exit: pid=280504
+[GROUND TRUTH] fork: pid=280506 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280507 ppid=280506 comm=sh
+[GROUND TRUTH] fork: pid=280508 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280509 ppid=280508 comm=sh
+[GROUND TRUTH] exit: pid=280509
+[GROUND TRUTH] exit: pid=280508
+[GROUND TRUTH] fork: pid=280510 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280511 ppid=280510 comm=sh
+[GROUND TRUTH] exit: pid=280511
+[GROUND TRUTH] exit: pid=280510
+[GROUND TRUTH] exit: pid=280507
+[GROUND TRUTH] exit: pid=280506
+[GROUND TRUTH] fork: pid=280512 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280513 ppid=280512 comm=sh
+[GROUND TRUTH] fork: pid=280514 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280515 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280516 ppid=280514 comm=sh
+[GROUND TRUTH] exit: pid=280515
+[GROUND TRUTH] fork: pid=280517 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280518 ppid=280516 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280518
+[GROUND TRUTH] fork: pid=280519 ppid=280516 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280517
+[GROUND TRUTH] fork: pid=280520 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280519
+[GROUND TRUTH] fork: pid=280521 ppid=280516 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280520
+[GROUND TRUTH] fork: pid=280522 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280480
+[GROUND TRUTH] exit: pid=280521
+[GROUND TRUTH] fork: pid=280523 ppid=280516 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280522
+[GROUND TRUTH] fork: pid=280524 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280523
+[GROUND TRUTH] fork: pid=280525 ppid=280516 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280524
+[GROUND TRUTH] fork: pid=280526 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280525
+[GROUND TRUTH] fork: pid=280527 ppid=280516 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280527
+[GROUND TRUTH] exit: pid=280516
+[GROUND TRUTH] exit: pid=280514
+[GROUND TRUTH] exit: pid=280526
+[GROUND TRUTH] fork: pid=280528 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280528
+[GROUND TRUTH] fork: pid=280529 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280529
+[GROUND TRUTH] fork: pid=280530 ppid=280513 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280530
+[GROUND TRUTH] exit: pid=280513
+[GROUND TRUTH] exit: pid=280512
+[GROUND TRUTH] fork: pid=280531 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280532 ppid=280531 comm=sh
+[GROUND TRUTH] exit: pid=280532
+[GROUND TRUTH] exit: pid=280531
+[GROUND TRUTH] fork: pid=280533 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280534 ppid=280533 comm=sh
+[GROUND TRUTH] exit: pid=280501
+[GROUND TRUTH] fork: pid=280535 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280535
+[GROUND TRUTH] exit: pid=280534
+[GROUND TRUTH] exit: pid=280533
+[GROUND TRUTH] fork: pid=280536 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280537 ppid=280536 comm=sh
+[GROUND TRUTH] fork: pid=280538 ppid=280537 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280538
+[GROUND TRUTH] fork: pid=280539 ppid=280537 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280539
+[GROUND TRUTH] fork: pid=280540 ppid=280537 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280541 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=280540
+[GROUND TRUTH] fork: pid=280542 ppid=280537 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280542
+[GROUND TRUTH] fork: pid=280543 ppid=280537 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280543
+[GROUND TRUTH] fork: pid=280544 ppid=280537 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280544
+[GROUND TRUTH] exit: pid=280537
+[GROUND TRUTH] exit: pid=280536
+[GROUND TRUTH] exit: pid=280479
+[GROUND TRUTH] fork: pid=280545 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280546 ppid=280545 comm=sh
+[GROUND TRUTH] exit: pid=280546
+[GROUND TRUTH] exit: pid=280545
+[GROUND TRUTH] fork: pid=280547 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280548 ppid=280547 comm=sh
+[GROUND TRUTH] exit: pid=280548
+[GROUND TRUTH] exit: pid=280547
+[GROUND TRUTH] fork: pid=280549 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280550 ppid=280549 comm=sh
+[GROUND TRUTH] fork: pid=280551 ppid=280550 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280551
+[GROUND TRUTH] fork: pid=280552 ppid=280550 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280552
+[GROUND TRUTH] fork: pid=280553 ppid=280550 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280554 ppid=2981 comm=pool-spawner
+[GROUND TRUTH] fork: pid=280555 ppid=1201 comm=polkitd
+[GROUND TRUTH] exit: pid=280555
+[GROUND TRUTH] fork: pid=280556 ppid=1201 comm=polkitd
+[GROUND TRUTH] exit: pid=280556
+[GROUND TRUTH] exit: pid=280553
+[GROUND TRUTH] fork: pid=280557 ppid=280550 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280557
+[GROUND TRUTH] fork: pid=280558 ppid=280550 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280558
+[GROUND TRUTH] fork: pid=280559 ppid=280550 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280559
+[GROUND TRUTH] exit: pid=280550
+[GROUND TRUTH] exit: pid=280549
+[GROUND TRUTH] exit: pid=280494
+[GROUND TRUTH] fork: pid=280560 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280560
+[GROUND TRUTH] fork: pid=280561 ppid=280481 comm=bash
+[GROUND TRUTH] fork: pid=280562 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280563 ppid=280562 comm=sh
+[GROUND TRUTH] exit: pid=280563
+[GROUND TRUTH] exit: pid=280562
+[GROUND TRUTH] fork: pid=280564 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280565 ppid=280564 comm=sh
+[GROUND TRUTH] exit: pid=280565
+[GROUND TRUTH] exit: pid=280564
+[GROUND TRUTH] fork: pid=280566 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280567 ppid=280566 comm=sh
+[GROUND TRUTH] fork: pid=280568 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280568
+[GROUND TRUTH] fork: pid=280569 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280569
+[GROUND TRUTH] fork: pid=280570 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280570
+[GROUND TRUTH] fork: pid=280571 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280571
+[GROUND TRUTH] fork: pid=280572 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280572
+[GROUND TRUTH] fork: pid=280573 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280573
+[GROUND TRUTH] exit: pid=280554
+[GROUND TRUTH] fork: pid=280574 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280574
+[GROUND TRUTH] fork: pid=280575 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280575
+[GROUND TRUTH] fork: pid=280576 ppid=280567 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280576
+[GROUND TRUTH] exit: pid=280567
+[GROUND TRUTH] exit: pid=280566
+[GROUND TRUTH] fork: pid=280577 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280578 ppid=280577 comm=sh
+[GROUND TRUTH] exit: pid=280578
+[GROUND TRUTH] exit: pid=280577
+[GROUND TRUTH] fork: pid=280579 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280580 ppid=280579 comm=sh
+[GROUND TRUTH] exit: pid=280580
+[GROUND TRUTH] exit: pid=280579
+[GROUND TRUTH] fork: pid=280581 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280582 ppid=280581 comm=sh
+[GROUND TRUTH] fork: pid=280583 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280583
+[GROUND TRUTH] fork: pid=280584 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280584
+[GROUND TRUTH] fork: pid=280585 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280561
+[GROUND TRUTH] exit: pid=280585
+[GROUND TRUTH] fork: pid=280586 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280587 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280587
+[GROUND TRUTH] exit: pid=280586
+[GROUND TRUTH] fork: pid=280588 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280588
+[GROUND TRUTH] fork: pid=280589 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280589
+[GROUND TRUTH] fork: pid=280590 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280590
+[GROUND TRUTH] fork: pid=280591 ppid=280582 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280591
+[GROUND TRUTH] exit: pid=280582
+[GROUND TRUTH] exit: pid=280581
+[GROUND TRUTH] fork: pid=280592 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280593 ppid=280592 comm=sh
+[GROUND TRUTH] exit: pid=280541
+[GROUND TRUTH] exit: pid=280593
+[GROUND TRUTH] exit: pid=280592
+[GROUND TRUTH] fork: pid=280594 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280595 ppid=280594 comm=sh
+[GROUND TRUTH] exit: pid=280595
+[GROUND TRUTH] exit: pid=280594
+[GROUND TRUTH] fork: pid=280596 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280597 ppid=280596 comm=sh
+[GROUND TRUTH] fork: pid=280598 ppid=280597 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280598
+[GROUND TRUTH] fork: pid=280599 ppid=280597 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280599
+[GROUND TRUTH] fork: pid=280600 ppid=280597 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280601 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=280600
+[GROUND TRUTH] fork: pid=280602 ppid=280597 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280602
+[GROUND TRUTH] fork: pid=280603 ppid=280597 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280603
+[GROUND TRUTH] fork: pid=280604 ppid=280597 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280604
+[GROUND TRUTH] exit: pid=280597
+[GROUND TRUTH] exit: pid=280596
+[GROUND TRUTH] fork: pid=280605 ppid=2 comm=kthreadd
+[GROUND TRUTH] exit: pid=280601
+[GROUND TRUTH] fork: pid=280606 ppid=2 comm=kthreadd
+[GROUND TRUTH] fork: pid=280607 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280607
+[GROUND TRUTH] fork: pid=280608 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280608
+[GROUND TRUTH] fork: pid=280609 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280609
+[GROUND TRUTH] fork: pid=280610 ppid=280481 comm=bash
+[GROUND TRUTH] exit: pid=280610
+[GROUND TRUTH] fork: pid=280611 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280612 ppid=280611 comm=sh
+[GROUND TRUTH] exit: pid=280612
+[GROUND TRUTH] exit: pid=280611
+[GROUND TRUTH] fork: pid=280613 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280614 ppid=280613 comm=sh
+[GROUND TRUTH] exit: pid=280614
+[GROUND TRUTH] exit: pid=280613
+[GROUND TRUTH] fork: pid=280615 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280616 ppid=280615 comm=sh
+[GROUND TRUTH] fork: pid=280617 ppid=280616 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280617
+[GROUND TRUTH] fork: pid=280618 ppid=280616 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280618
+[GROUND TRUTH] fork: pid=280619 ppid=280616 comm=cpuUsage.sh
+[GROUND TRUTH] fork: pid=280620 ppid=255947 comm=code
+[GROUND TRUTH] exit: pid=280619
+[GROUND TRUTH] fork: pid=280621 ppid=280616 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280621
+[GROUND TRUTH] fork: pid=280622 ppid=280616 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280622
+[GROUND TRUTH] fork: pid=280623 ppid=280616 comm=cpuUsage.sh
+[GROUND TRUTH] exit: pid=280623
+[GROUND TRUTH] exit: pid=280616
+[GROUND TRUTH] exit: pid=280615
+[GROUND TRUTH] fork: pid=280624 ppid=2991 comm=pool-spawner
+[GROUND TRUTH] fork: pid=280625 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280626 ppid=280625 comm=sh
+[GROUND TRUTH] exit: pid=280626
+[GROUND TRUTH] exit: pid=280625
+[GROUND TRUTH] fork: pid=280627 ppid=255893 comm=code
+[GROUND TRUTH] fork: pid=280628 ppid=280627 comm=sh

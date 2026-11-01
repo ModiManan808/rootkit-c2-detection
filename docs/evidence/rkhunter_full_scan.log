@@ -1,0 +1,14 @@
+[ Rootkit Hunter version 1.4.6 ]
+
+[0;35mChecking system commands...[0;39m
+
+  Performing 'strings' command checks
+    Checking 'strings' command[31C[ [0;32mOK[0;39m ]
+
+  Performing 'shared libraries' checks
+    Checking for preloading variables[24C[ [0;32mNone found[0;39m ]
+    Checking for preloaded libraries[25C[ [0;32mNone found[0;39m ]
+    Checking LD_LIBRARY_PATH variable[24C[ [0;32mNot found[0;39m ]
+
+  Performing file properties checks
+    Checking for prerequisites[31C[ [0;32mOK[0;39m ]

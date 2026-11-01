@@ -22,8 +22,14 @@ from detection.detection_result import DetectionResult, DetectionStatus, Tier
 TECHNIQUE_ID = "T1014"
 TECHNIQUE_NAME = "Rootkit - Kernel Module Load (finit_module)"
 
-# Matches ausearch/auditd log lines referencing finit_module calls
-_FINIT_MODULE_RE = re.compile(r"finit_module", re.IGNORECASE)
+# auditd never prints the literal string "finit_module" - it logs the raw
+# syscall number (313 = finit_module on x86_64), the audit key assigned to
+# the watch rule ("module_load"), and a KERN_MODULE record with the module
+# name. Match on any of those instead.
+_FINIT_MODULE_RE = re.compile(
+    r'syscall=313|key="module_load"|type=KERN_MODULE',
+    re.IGNORECASE,
+)
 
 
 def run(log_path: str | Path | None = None) -> list[DetectionResult]:
